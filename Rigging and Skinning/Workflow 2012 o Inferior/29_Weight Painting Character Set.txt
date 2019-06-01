@@ -1,0 +1,271 @@
+
+
+
+Riggings in Cinema 4D (mi version C4D-R12)
+
+
+	digital tutors - character rigging in cinema 4d
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+Skeleton System Bípedo Kinematics Workflow:
+
+
+
+Note:	workflow, de la creación de character, bípendo de la mano de la gente DigitalTutors, para Cinema 4D 
+
+	del curso "digital tutors - character rigging in cinema 4d"
+
+
+
+Rename:	las diferentes chains, ó cadenas es altamente recomendable renombrarlas con nombres característicos
+
+	los cuales nos permiten reconocer éstas rápidamente y, sobre todo las el proceso de emparentamiento
+
+	manual el cuál, es parte fundamental de proceso de rigging
+
+
+-----------------------------------------------------------------------------------------------------------
+
+
+
+	Weight Painting Character Set:
+	______________________________
+
+
+	-----------------------------------------------------------------------------------------------
+
+	
+
+
+
+	Consideraciones:
+	________________
+
+
+	_es recomendable recomendable ó lo general se trabajo sólo en la mitad del character, en su parte
+
+	izquierda para luego duplicar por simetría la parte que no ha sido editada ó pintada
+
+
+
+	-----------------------------------------------------------------------------------------------
+
+
+
+
+	Animation Proxi:
+	________________
+
+
+	_es recomendable para la correcta realización del proceso de envelope, ó weight painting, animar las 
+
+	partes ha editar para así, poder ver en acción las partes con problemas a la hora de las flexiones y,
+
+	contracciones de las diferentes articulasciones ó joints, inplicados en determinados movimientos
+
+
+	-----------------------------------------------------------------------------------------------
+
+
+
+	Weight Manager:
+	_______________
+
+
+	_ahora ya con el character, en la pose de deformación a trabajar el weight map, seleccionamos la mesh,
+
+	del character y su tag, de skin, y vamos ha "Character/Manager/Weight Manager", así, se abrirá el panel
+
+	"Weight Manager", en el cuál, iremos a las opciones de "Joints", así, podremos ver lo joint, ó bones,
+
+	de trabajo
+
+
+	
+
+	-----------------------------------------------------------------------------------------------
+
+
+
+	Polygon Faces:
+	______________
+
+
+	_una forma práctica de ajustar el weight map, por bloques de contenidos es hacer selecciones de 
+
+	sub-elementos, faces, de las áreas afectadas ó influenciadas por un bone, determinado para luego
+
+	afienzar esa influencia a un 100%
+
+
+	_así, podemos entrar en el modo de sub-elementos, de la mesh, del character, y seleccionar por ej:
+
+	las faces, correspondientes a la pierna ó leg, luego ir al panel "Weight Manager/Joints", y 
+
+	seleccionar el bone, de la pierna, "L_Femur bn"
+
+
+	Workflow: 
+
+	_para hacer una selección en forma de loop, marcando donde comienza las "faces", de un bone, hacemos 
+
+	el siguiente comando shortcut "ul" y luego un loop, donde termina para esto, hacemos el siguiente comando 
+
+	shortcut "ul", (Loops Selection)más shift, para sumar la selección anterior
+
+
+	_ahora para rellenar la sección entre ambos loops, debemos hacer el comando ó shortcut "uf" (Fil Selection)
+
+
+	_más para eliminar la influencia del bone, existente debemos hacer "Weight Manager/Joint/Funcions/Zero",
+
+	ó ha menos que coloquemos el valor "Weight manager/Options/Strengh/Mode", de "Add", agrear ha "Abs",
+
+	Absolute/absoluto, así, esta acción reemplazará a la existente
+
+
+	_luego iriamos a la sección "Weight Manager/Options/Strengh", y colocaríamos un calor de influencia
+
+	de 100%, y le daríamos ha "Apply", para fijar los cambios
+
+
+	_así, podremos repetir este paso para los demás bones, del character
+
+
+
+	-----------------------------------------------------------------------------------------------
+
+
+
+	Smoothing:
+	__________
+
+
+	_a continuación del paso anterior de weight map, a través, de selecciones determinadas de faces, es
+
+	altamente recomendable hacer selecciones entre bones, para hacer suavizados de weights, ó 
+
+	interpolaciones de la malla para así, lograr un mayor realismo en las animaciones
+
+
+	_para esto, repetimos el proceso de selección explicado en el paso anterior y luego con la selección
+
+	activa y el respectivo bone, seleccionado vamos ha "Weight Manager/Smoothing/Distante: 70cm", la
+
+	opción es "Distance", es un valor variable que dependerá de la escala del character, que estemos 
+
+	trabajando y, para fijar los cambios debemos darle ha "Smooth"
+
+
+
+	-----------------------------------------------------------------------------------------------
+
+
+
+	Weight Tool:
+	____________
+
+
+	_más disponemos de una opción dinámica para realizar un pintado gradual y personalizado para cada
+
+	bone, del character set
+
+
+	_para esto, seleccionamos la mesh, del character, y vamos ha "Character/Weight Tool", luego vamos
+
+	al panel "Weight Manager/Joints", y seleccionamos el bone, de interés a trabajar luego, procedemos
+
+	a pintar las áreas de influencia del mismos
+
+
+	_más la herramienta "Weight Tool", dispone de una serie de opciones y criterios de acción los cuales
+
+	podremos editar en el panel de propiedades
+
+
+	(en las propiedades de esta herramienta se encuentra la ección de "bones", así, como las opciones y
+
+	criterios de acción por ende podremos trabajar sin la necesidad de abrir permanentemente el panel de
+
+	weight manager)
+
+
+	_para no tener que realizar el proceso de duplicación por simetría del weight map, podemos directamente
+
+	editar el weight map, en forma de simetría ó reflejada para trabajar así, en ambos lados del character,
+
+	a la vez
+
+
+	_para esto, debemos entrar a las opcioens de la herramienta de "Weight Tool/Symetry/Enable", y ajustar 
+
+	las siguientes características:
+
+
+		_Model:
+
+			_esta es la opción más recomendada y la que mejor trabaja
+
+
+		_Search:
+
+			_este es el radio de búsqueda el más recomendado es un valor de "10cm", de amplitud
+
+
+		_Coord:
+
+			_es más recomendable utilizar el sistema de cordenadas de ubicación "World"
+
+
+		_Mirrow:
+
+			_aqui debemos indicar la cordenada de acción ó de trabajo, por lo general es "YZ"
+
+
+
+
+	-----------------------------------------------------------------------------------------------
+
+
+
+	Auto Weight:
+	____________
+
+
+	_alternativamente disponemos de la opción de "Auto Weight", para hacer un ajuste automático del weight
+
+	map
+
+
+	_para esto, seleccionamos la mesh, del character, y vamos ha "Weight Manager/Auto Weight" 
+
+
+		_mode:
+
+			_escogemos la opción de "Intersection"
+
+
+		_Joint:
+
+			_indicamos un valor de "3"
+
+
+		_Fall-Off:
+
+			_dejamos el valor por defecto "80%"
+
+
+		_Calculate:
+
+
+			_y para terminar la acción le damos ha "Calculate"
+
+	
+
+
+

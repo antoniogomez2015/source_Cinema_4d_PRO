@@ -1,0 +1,56 @@
+
+1.enla interface de uv edit arrastramos nuestro modelos a la ventana de uv edit
+
+2.a través de las 3  herramientas de selección de sub elementos de mesh, vertex, edges, faces
+
+3.lugo de seleccionar el área que nos interesa editar, podemos hacer una proyección de la misma con el criterio que escojamos:
+
+	3.1.Sphere: proyección esférica
+
+	3.2.Cylinder: proyección cilíndrica
+
+	3.3.Frontal: proyección frontal de la cámara seleccionada
+
+	3.4.Flat: proyección axonométrica de la vista ó toma
+
+	3.5.Cubic: proyección sintetizada que fragmenta la forma en proyección simples superpuestras
+
+	3.6.Cubic2: proyección sintetizada que fragmenta la forma en proyección simples separadas
+
+	3.7.Box: proyección en unwrar ó desmembrado de la forma, similar la Cubic2
+
+	3.8.Shrink: proyección automática, ésta analiza la forma y reliza una proyección con las zonas más grandes las cuales son más resaltadas ó colocadas en primer plano
+
+4.luego de que hemos proyectado con el criterio que más se adapte a la forma deseada también prodremos editar la mesh que hemos proyectado a través de las herramientas;
+
+	4.1.edición de Uvs vertex y Uv Polygon; para seleccionar, mover y deformar las proyecciones creadas en el panel de Uv Mpas
+
+5.para realizar mapeados de elementos complejos podemos indicar a la aplicación nuestros propios criterios de cortes a medida, en a través de seams seleccionadas: en "modo modelado, Master_Tony 6" 
+
+	5.1.en modo de edición de bordes; "edges", seleccionamos los bloques de contenido ó formas ó fracmentos de mesh que deseamos generar que más se adapten a la forma y el mapeo que deseamos lograr
+
+	5.2. luego debemos salvar esa selección a través de una etiqueta "tag", esto los hacemos a través del menu Selecttion/Set Selection ó "V"/Selection/Set Selection
+
+		5.2.1.se creará en el la mesh en el outliner una tag en forma de triángulo, lo seleccionamos y le colocamos un nombre descriptivo
+
+6.luego nos vamos al modo Uv Edit
+
+	6.1.ahora seleccionamos la opción de Uv Polygon, y seleccionamos todos los polígonos de nuestra forma, también con el comando Control+A
+
+	6.2.posteriormente colocamos la vista frontal de nuestro viewport "F4", para así hacer una proyección frontal base del objeto
+
+	6.3.luego en la sección Uv Mapping; le damos a la opción de proyección "From ó frontal", así obtendremos una proyección frontal del objeto base, la cual es necesaria
+
+	6.4.ahora nos vamos a la sección "Relax UV", y en la sección; activamos los check boxes: "Cut Selected Edges" y "Use Tag" y "Auto Realign"
+
+	6.5.luego, en el campo "Use Tag", que hemos activado arrastramos "Draw", la "Tag", de la selección que habiamos creado en nuestra forma hasta el campo "Edge Selection"
+
+	6.6.ahora le damos a "Apply", para que se apliquen los cortes con nuestros criterios indicados anteriormente con los bordes de la selección de las formas seleccionadas
+
+7.para redistribución ó auto ajuste de las partes ó islas de formas resultantes en el camvas de la textura del panel Uv edit vamos a "Optimal Mapping"
+
+	7.1.la opción "Optimal (Cubic), redistribuye en bloques los uvs con los mismos criterios de "proyection Cubic"
+
+	7.2.la opción "Optimal (Angle), redistribuye en bloques los uvs con los criterios similares la "Cubic2", aunque más efectivo
+
+	7.3.La opción "Realign", redistribuye equidistantemente las islas de uvs con el mejor criterio en relación al espacio del camvas (para máxima edición hacerlo a mano)

@@ -1,0 +1,95 @@
+
+
+
+
+Tutorial Cinema 4d Bodypaint 3d Básico a Avanzado parte 3 by Zigurat Tutoriales
+
+	https://www.youtube.com/watch?v=kRCvIcjcYyo
+
+
+
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+General:
+________
+
+	_primero debemos de tener nuevo motivo editable y con el proceso uvmap, aplicado
+
+
+	_para leugo aplicarle un material a el motivo en caso de que éste no disponga ya de uno, más ha éste material debemos de
+
+	crearle al menos una nueva textura en el canal "Color", para que así, el proceso de pintura sea volcado sobre ésta nueva
+
+	textura
+
+
+	_para luego ir al modo de "BP UV Edit", para luego ir la sección de "Materials", y en la sección canales, relacionar el 
+
+	canal "C", de color con el material y la textura respectiva dándole ha la "X", y se cree una nueva layer, en el panel layers,
+
+	para que así, podamos comenzar con el proceso de bodypaint, manuel mente
+
+
+
+Projecting Textures:
+____________________
+
+	_primero es recomendable ir al modo "DP UV Edit", e ir a la sección de "Layer", y crear una nueva layer, en el orden deseado 
+
+	haciendo "New Layer", ésta la renombramos y la dejamos seleccionada para que así, la proyección de la nueva textura ha proyectar 
+
+	no estropee otros procesos de pintura previos
+
+
+	_y para proyectar una textura sobre el motivo directamente en el viewport, 3d, primero debemos de seleccionar la textura ha 
+
+	proyectar como por ejemplo el rostro de un character
+
+
+	_para leugo cargar ésta textura en Photoshop, para posteriormente en photoshop, hacer una selección sobre las áreas de la 
+
+	imágen ha proyectar, a través, de las diferentes herramientas de seleccionar, como la rectangular, eliptica, otras, de ésta
+
+	manera, podremos selecciona toda la imágen ó extractos de ésta
+
+
+	_y para que así, cuando tengamos la selección del área de la imágen ha proyectar seleccionada en photoshop, hacer "Edit/Copy",
+
+	ó directamente su shortcut; "Control + C", para que así, la selección sea guardada en el portapapeles y la podamos llevar ha 
+
+	cinema 4d
+
+
+	_para leugo volver ha cinema 4d colocar el motivo lo más de frente posible ó si es posible a través, de una vista axonométrica
+
+	para que así, la textura se proyecte correctamente
+
+
+	_y para a continuación darle ha la herramienta "Projection Painting", de ésta manera, podremos ver que en el panel layer, se 
+
+	han desaparecido las layers, existentes previamente y se agregado una nueva layer, temporal para éste proceso
+
+
+	_y así, entonces con la herramienta projection painting, seleccionada sólo debemos hacer "Control + V", para pegar la textura 
+
+	que tenemos copiada en el portapapeles para que así, la textura sea pegada directamente sobre el viewport 3d, la podremos ajustar
+
+	y modificar a través, de la herramienta "Transform Bitmap", directamente en el viewport, tanto en movimiento, escala y rotación
+
+
+	_de ésta manera, al terminar de hacer las transformaciones de la imágen proyectada en el viewport, debemos volver click, sobre 
+
+	el ícono de la herramienta "projection painting", para que así, el sistema nos pida que aceptemos las transformaciones para que
+
+	así, la imágen quede fijada y proyectada sobre el motivo y la respectiva layer, que hemos preparado para tal fin
+
+
+
+
+
+
+
+

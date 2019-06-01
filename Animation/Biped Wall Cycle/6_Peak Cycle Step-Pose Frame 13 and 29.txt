@@ -1,0 +1,113 @@
+
+
+
+Riggings in Cinema 4D (mi version C4D-R12)
+
+
+	digital tutors - character rigging in cinema 4d
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+Skeleton System Bípedo Kinematics Workflow:
+
+
+
+Note:	workflow, de la creación de character, bípendo de la mano de la gente DigitalTutors, para Cinema 4D 
+
+	del curso "digital tutors - character rigging in cinema 4d"
+
+
+
+Rename:	las diferentes chains, ó cadenas es altamente recomendable renombrarlas con nombres característicos
+
+	los cuales nos permiten reconocer éstas rápidamente y, sobre todo las el proceso de emparentamiento
+
+	manual el cuál, es parte fundamental de proceso de rigging
+
+
+-----------------------------------------------------------------------------------------------------------
+
+
+
+	Scene Frames Cycles:
+	____________________
+
+
+
+	-----------------------------------------------------------------------------------------------
+
+
+
+	Down Step/Pose Frame 5 and 21:
+	______________________________
+
+
+	
+	Foot Cinematic:
+	_______________
+
+
+	_en este proceso debemos lograr un mejor "flow", entre el movimiento de las piernas y el
+
+	balance entre el arqueado ó flexión de las rodillas y la subida y bajada del centro de 
+
+	gravedad del character
+
+
+
+	_para esto, primero debemos ir al "frame 13", y subir el handle, del centro de gravedad,
+
+	"Handle Hip", y subirlo hasta casi estirar la pierna que extendidad hacia atras para así,
+
+	hacer subir más el character en su centro de gravedad en el punto donde la pierna está 
+
+	más extendida
+
+
+	_también, en el frame 13, podríamos ajustar los siguientes valores de los controles del foot:
+
+
+		_"R_Hanle Finger": 0
+
+		_"R_Handle Ball": aumentar un poco el arqueado ó flexión del ball
+
+
+	NOTE:	de en veces es mejor copiar los valores de los handles, expresados anteriormente y
+		
+		y pegarlos en los valores de los handles, del otro foot "L_Handle"
+		
+
+
+	_luego debemos copiar el keyframe, que hemos generado en el "frame 13", y pegarlo en el
+
+	"frame 29", para nivelar así, la otra pierna en la otra subida de ésta
+
+
+
+	_más ahora también, podremos ajustar la interpolación entre la animación entre ambos pies,
+
+	para que así, logremos una mejor transición y cycle, entre éstos
+
+
+	_para esto, primero vamos el frame 13, luego seleccionamos el "L_handle_Foot", y abrimos el
+
+	F_Curve Editor, haciendo mouse right click, en el canvas y seleccionando la opción de
+
+	"Show F_Curves.."
+
+
+	_luego seleccionamos cualquiera de los handles del foot, y vamos a su mayor extensión del 
+
+	pie ó pierna hacia adelante "frame 13 and 29", y eliminamos los "keyframes", demás en el 
+
+	F_Curve Editor, como también cambiamos la interpolación de la curva de animación ha "Linear",
+
+	ó ajustamos manualmente los handles de las tangentes para que éstos no hagan interpolación de
+
+	de curva de animación, de esta manera lograremos una interpolación más lineal y estable para
+
+	el efecto de loop cycle

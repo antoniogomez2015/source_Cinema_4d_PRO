@@ -1,0 +1,244 @@
+
+
+
+Riggings in Cinema 4D (mi version C4D-R12)
+
+
+	digital tutors - character rigging in cinema 4d
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+Skeleton System Bípedo Kinematics Workflow:
+
+
+
+Note:	workflow, de la creación de character, bípendo de la mano de la gente DigitalTutors, para Cinema 4D 
+
+	del curso "digital tutors - character rigging in cinema 4d"
+
+
+
+Rename:	las diferentes chains, ó cadenas es altamente recomendable renombrarlas con nombres característicos
+
+	los cuales nos permiten reconocer éstas rápidamente y, sobre todo las el proceso de emparentamiento
+
+	manual el cuál, es parte fundamental de proceso de rigging
+
+
+-----------------------------------------------------------------------------------------------------------
+
+
+
+	Skeleton System Mirror Rig:
+	___________________________
+
+
+
+	-----------------------------------------------------------------------------------------------
+
+
+
+	Selecciones:
+	____________
+
+
+	_cinema 4d, nos permite hacer duplicado por simetría no sólo del skeleton system, si no, que
+
+	tambén, de los elementos handles, que son parte del rigging, y de cualquier otro elemento que
+
+	estemos utilizando para el proceso
+
+
+	_para ésto, debemos hacer selecciones en el viewport, ó para ser más exactos en el explorer,
+
+	de los elementos deseados a duplicar por simetría 
+
+
+	_para seleccionar cadenas y todos los elementos que las componen como bones, handles, y demás
+
+	elementos, debemos hacer "mouse midle click", sobre las cadenas deseadas, así, se seleccionarán
+
+	éstas y todos sus sub-elementos
+
+
+
+	-----------------------------------------------------------------------------------------------
+
+
+
+	Mirror Tool:
+	____________
+
+
+	_ya con todos los elementos ha duplicar por simetría seleccionados vamos ha "Character/Mirror Tool"
+
+
+	_así, podremos entrar a las opciones y atributos de la herramienta "Mirror Tool", para configurar
+
+	las opciones que más se ajusten a nuestras necesidades
+
+
+
+	Direction:
+	__________
+
+	
+	_Orion:
+
+		_
+
+
+	_Axis:
+
+		_
+
+
+	_Coords:
+
+		_
+
+
+	_Mirroring:
+
+		_
+
+
+
+	Options:
+	________
+
+
+	_Target:
+
+		_
+
+
+	_Include Links:
+
+		_
+
+
+	_Freeze:
+
+		_
+
+
+	_Object:
+
+		_
+
+
+	_Link Joints:
+
+		_
+
+
+	_Position:
+
+		_
+
+
+	_Weights:
+
+		_
+
+	
+	_Axes:
+
+		_
+
+
+	_Points:
+
+		_
+
+
+
+	Naming:
+	_______
+
+
+	_Match Case:
+
+		_
+
+
+	_Prefix:
+
+		_
+
+
+	_Replace:
+
+		_en esta opción podemos indicar carácteres ha reemplazar
+
+
+	_With:
+
+		_en esta opción podemos indicar carácteres ha reemplazar
+
+
+
+	Search:
+	_______
+
+
+	_Match:
+
+		_
+
+
+	_Tolerance:
+
+		_
+
+
+	Tool:
+	_____
+
+
+	_Mirror:
+
+		_esta opción permite duplicar de forma reflejada los elementos seleccionados
+
+
+
+
+	-----------------------------------------------------------------------------------------------
+
+
+
+	Correcciones:
+	_____________
+
+
+	_es posible que hacer duplicados con simetría a través, de la herramienta "Mirror Tool", nos
+
+	de problemas con los elementos que tengan "IK", kinemática invertida, en el sentido de que es
+
+	posible de que el ángulo de preferencia de rotación de un joint, ó articulación se copie de 
+
+	manera invertida, es dicir, por ejemplo; si un pierna por lo general flexiona en un sentido
+
+	natural ahora lo hará de forma invertida ó al revés
+
+
+	_para esto, debemos seleciona el bone, con el inconveniento, este bone, por lo general tiene
+
+	asígnado el tag "IK", así, podremos a las opciones del ik, y hacer un bypass, de éste
+
+
+	_así, yendo a las opciones de "IK/Tag/Tag Properties/", y allí, deschequeamos la opción de
+
+	"Use IK", de esta manera podremos ajustar los bones, a la posición en la que deberían estar
+
+	para que así, éstos tomen su ángulo de rotación de preferencia de forma natural cuando volvamos
+
+	ha activar las opciones de "Use IK"
+
+
+

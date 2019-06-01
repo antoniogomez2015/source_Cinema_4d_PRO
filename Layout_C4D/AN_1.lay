@@ -1,0 +1,50 @@
+version	2
+Split
+Horizontal
+(1303::367)
+(0::0)
+{
+	Split
+	Horizontal
+	(343::958)
+	(0::0)
+	{
+		Split
+		Vertical
+		(343::483)
+		(0::0)
+		{
+			Nodes
+		,
+			Split
+			Vertical
+			(240::239)
+			(0::0)
+			{
+				Exclusive Links
+			,
+				Global Links
+			}
+		}
+	,
+		Split
+		Vertical
+		(639::185)
+		(0::0)
+		{
+			Single View
+		,
+			Curve Editor
+		}
+	}
+,
+	Split
+	Vertical
+	(512::314)
+	(0::0)
+	{
+		Node Params
+	,
+		Layers
+	}
+}

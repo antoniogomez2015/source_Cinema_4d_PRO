@@ -1,0 +1,113 @@
+
+
+
+Riggings in Cinema 4D (mi version C4D-R12)
+
+
+	digital tutors - character rigging in cinema 4d
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+Skeleton System Bípedo Kinematics Workflow:
+
+
+
+Note:	workflow, de la creación de character, bípendo de la mano de la gente DigitalTutors, para Cinema 4D 
+
+	del curso "digital tutors - character rigging in cinema 4d"
+
+
+
+Rename:	las diferentes chains, ó cadenas es altamente recomendable renombrarlas con nombres característicos
+
+	los cuales nos permiten reconocer éstas rápidamente y, sobre todo las el proceso de emparentamiento
+
+	manual el cuál, es parte fundamental de proceso de rigging
+
+
+-----------------------------------------------------------------------------------------------------------
+
+
+
+	Scene Frames Cycles:
+	____________________
+
+
+
+	-----------------------------------------------------------------------------------------------
+
+
+
+	Contact Step/Pose Frame 1:
+	__________________________
+
+
+	1_centro de gravedad bajo ó ambas piernas un poco flexionadas
+
+
+	2_pierna derecha desplazada hacia adelante posada al suelo con el talón
+
+
+	3_pierna izuqierda desplazada hacia atras posada al suelo con la bola del pie
+
+
+	4_brazo izquierdo a nivel del torso un poso separado del mismo
+
+
+	5_ante brazo y mano flexionados hacia adelando poco más de 90 grados buscando el
+
+	balance
+
+
+	6_el hombo izquierdo un poco levandado y hacia adelante
+
+
+	7_el torso debe girarse sobre su propio eje en el sentido opuesto a la pierna de avanze
+
+	ó que está hacia adelante, en este caso es la pierna derecha así, que la rotación del torso
+
+	será de izquierda ha derecha buscando el balance del cuerpo
+
+
+	8_el torso también, debe de girarse de un lado al otro desde su base en contra posición a la 
+
+	pierna de avance en este caso sería una rotación izquierda ha a derecha
+
+
+	9_el brazo derecho deberá extenderse hacia atras en contraposición al brazo izuqierdo que está
+
+	balanceado hacia adelante
+
+
+	10_la cabeza debe esta virada hacia el sentido opuesto del avance de la pierna que está hacia
+
+	adelante y también, debe esta un poco rotada sobre su propio eje en ese mismo sentido
+
+
+	11_el hombro derecho de bajarse un poco buscando el balance del cuerpo así, como la pompensación
+
+	con el hombro izquierdo que está levantado
+
+
+	12_los dedos deben de tener un posición natural "entre abiertos y flexionados"
+	
+
+
+http://cgpeers.com/torrents.php?id=23312&torrentid=23176#torrent23176
+
+https://www.youtube.com/watch?v=3z3r1w9qhMM
+
+https://www.youtube.com/watch?v=5dp5EeCC7C0
+
+https://www.youtube.com/watch?v=CZwcOqLQnM8
+
+http://www.xvideos.com/video9515063/gigantic_black_boner_corrupting_russian_brunette_sweet_ass
+
+https://www.youtube.com/watch?v=2Lm1Ukjj5mE
+
+
+

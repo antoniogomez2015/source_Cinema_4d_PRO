@@ -1,0 +1,110 @@
+
+
+
+
+
+
+	
+
+
+
+	Referencia:
+
+		mamecomdb
+
+		VRAY PARA CINEMA 4D ANTIALIASING
+:
+			 https://www.youtube.com/watch?v=eCLEYAMxVrs&list=PLXtVivrBaK3KNvPg4PV1fxXoWbilhJyKJ
+
+
+
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+	Sistema V-ray for C4D:
+	______________________
+
+
+	Antialising:
+	____________
+		
+		Descripción:
+		____________
+		
+		_El antialiasing es el suavizado que realiza vray, al pasar de estado la escena de vectorizada a 
+
+		rasterizada, es decir, de gráficos a pixeles ó de funciones matemáticas a pixeles que conforman el 
+
+		render. 
+
+
+		_Siempre que se realiza esta conversión se pierden datos ó información, y es allí donde estra el 
+
+		antialiasing.
+
+
+
+		OBSERVACIÓN:
+		____________
+	
+		_Los valores de muestreo que indiquemos en la sección de antialiasing son tomados para su aplicación 
+
+		por vray al cuadrado, ej: si colocamos "2", vray, tomará cuatro muestras por pixel.	
+
+
+
+		OBSERVACIÓN:
+		____________
+
+		_Entre menor el tamaño de resolución de salida del render, ej: 600x800px, será necesario un mayor 
+
+		antialiasing V-ray, cuenta con tres algoritmos de antialiasing Image sampler/Type
+
+
+
+		Fixed:
+		______
+
+		_éste toma un número fijo determinado por pixel, especialmente útil para imágenes de alta complejidad 
+
+		en la que sabemos el detalle de suavizado deseado en las imágenes y materiales en relación 
+
+		a la iluminación
+
+
+
+		Adaptative DMC:
+		_______________
+
+		_Este es valor que bien por defecto y es el que nos proporciona un mejor  resultado, éste consta de un 
+
+		valor variable, en la primera pasada utiliza el valor más bajo de muestreo y, basandose en la 
+
+		intensidad de los colores adyacentes, precisa si es necesario hacer otra pasada con el valor más alto 
+
+		de muestreo
+
+
+
+		Adaptative Subdivision:
+		_______________________
+
+		_Este toma un númera variables de muestras pero éste trabajo a nivel de sub-pixels, esto quiere decir, 
+
+		que en su valor de muestro más bajo trabaja con valores de negativos 
+
+
+		_ej: si ponemos un valor de "0", trabajará con una muestra por pixel, pero si ponemos un valor de "-1", 
+
+		trabajará con una muestra por cada 2 pxeles
+
+
+
+
+
+
+
+		

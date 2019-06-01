@@ -1,0 +1,56 @@
+
+
+http://www.bumeran.com.ve/empleos/disenador-web-app-champions-c-amp;p-human-consulting-c.a-1110387036.html
+http://www.bumeran.com.ve/empleos/disenador-grafico-audiovisual-world-champion-games-c.a-1110384295.html
+http://www.bumeran.com.ve/empleos/disenador-grafico-web-world-champion-games-c.a-1110383548.html
+
+
+
+Riggings in Cinema 4D (mi version C4D-R12)
+
+
+	digital tutors - character rigging in cinema 4d
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+Interface:
+
+
+
+	-----------------------------------------------------------------------------------------------
+
+
+	Snap:
+	_____
+
+
+	_es aconsejable hacer visible y parte de la interface las opciones de "Snap" 
+
+
+	_para esto, podemos acceder ha ellas a través, del shortcut "P", y acoplarlas a un costado del
+
+	viewport, por ejemplo
+
+
+	-----------------------------------------------------------------------------------------------
+
+
+
+	Axis Center:
+	____________
+
+
+	_también, es aconsejable hacer visibles las opciones de Axis Center, las ccuales nos permitirán
+
+	configurar los sistemas de skeletons, entre otros
+
+
+	_para esto, vamos al menú "Structure/Axis Center", así, podremos flotar este panel y colocarlo
+
+	por ejemplo dentro del panel explorer, a su lado derecho para así, tener siempre disponible
+
+

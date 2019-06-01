@@ -1,0 +1,23 @@
+
+
+
+	MoGraph/Effector
+
+
+		Delay:
+
+		este permite hacer un efecto de "bounce", ó rebote, en las animaciones a través de la acelaración y desaceleración de los mismos
+		por medios de comportamientos
+
+		1_vamos a "MoGraph/Fracture"
+
+		2_dentro de "Fracture" (para usarlo como medio MoGraph), anidamos el elemento mesh ha animar y ha crear el efecto "Delay"
+
+		3_ahora con el elemento "Fracture", seleccionado vamos a "MoGraph/Effector/Delay", para que el "Delay", quede relacionado con el "Fracture"
+
+		4_ahora vamos a las propiedades del "Delay", "Delay/Effector/Mode/Spring", "Spring", es un modo de bounce ó rebote
+
+
+
+
+

@@ -1,0 +1,102 @@
+
+
+
+
+Tutorial Cinema 4d Bodypaint 3d Básico a Avanzado parte 3 by Zigurat Tutoriales
+
+	https://www.youtube.com/watch?v=kRCvIcjcYyo
+
+
+
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+Crear pinceles en Photoshop:
+____________________________
+
+	_así, primero abrimos photoshop, y creamos un nuevo lienzo de por ej, 500x500px, con fondo blanco
+
+
+	_para luego proceder con el pincel ha crear una muestra ha modo de patterns, también, podríamos pegar una selección de
+
+	alguna forma más compleja como un logotipo ó forma personalizada como geométrica, otros
+
+
+	_éste proceso lo debemos hacer en un color negro y totalmente plano, ya que el sistema somará sólo los valores de liminancia
+
+
+	_leugo en photoshop, vamos a las opciones de "Edit/Define Brush Preset", para a continuación asignarle un nombre el nuevo pincel
+
+	generado
+
+
+	_ahora debemos de exportar el nuevo pincel que hemos creado, para eso en photoshop, vamos a las opciones avanzadas del módulo
+
+	brush, shortcut, " F5", así, con la herramienta brush, activada podremos configurar los pinceles creados y los existentes
+
+
+	_así, en la lista de brushes, buscamos el hemos creado de forma personalizada y con éste seleccionado vamos a las opciones de 
+
+	"Open Preset Manager", en la parte inferior del panel Brush
+
+
+	_de ésta manera, tendremos que volver ha seleccionar el pincel que hemos creado en el panel "Preset Manager", para luego con 
+
+	éste seleccionar darle ha "Save Set", para que así, podamos guardar éste pincel en nuestro equipo para posteriormente utilizarlo
+
+	dentro de cinema 4d
+
+
+
+Importar Pinceles dentro de Cinema 4D:
+______________________________________
+
+	_priemro debemos abrir cinema 4d, e ir al modo "BP UV Edit", e ir a las opciones de "Brushes", y allí, vamos a la opción
+
+	"Brushes/File/Load Brushes..", para que así, a través, del explorador podamos ir hasta la ruta del archivo del pincel que hemos
+
+	creado previamente
+
+
+	_de ésta manera, posterior mente ha haber cargado el nuevo pincel podremos entonces seleccionarlo para su uso en el proceso 
+
+	de bodypaint, otros
+
+
+
+Crear pinceles dentro de Cinema 4D:
+___________________________________
+
+
+	_primero debemos abrir cinema 4d, e ir al modo "BP UV Edit", e ir la panel "UVmap/File/New Texture", para así, generar una nueva
+
+	textura en la cuál, crearemos el patrón ó módulo el cuál, se convertirá en un nuevo pincel personalizado por nosotro
+
+
+	_para posteriormente conmenzar ha dibujar nuestro motivo por ejemplo, un patrón cículos para negros para el proceso de pintado
+
+	de skin, ó piel
+
+
+	_y cuando hayamos terminado de crear ó configurar el nuevo pincel ha crear ir ha "UVMap/Edit/Define Brush Preset", así, nos
+
+	saldrá una ventana modal en la cuál, tendremos que asígnale un nombre a el nuevo pincel creado así, como una ubicación y 
+
+	gerarquización
+
+
+	_así, como también, podremos exportar los pinceles creados dentro de cinema 4d, para un posterior uso en otras versiones de c4d,
+
+	ó en otras aplicaciones
+
+	
+	_para ésto, seleccionamos el forder, o selección de pinceles ha exportar y luego, vamos ha 
+
+	"BP UV Edit/Brushes/File/Export Selection"
+
+	
+
+
+

@@ -1,0 +1,108 @@
+
+
+
+
+
+
+
+referencia:
+
+	mamecomdb
+
+		VRAY C4D OCLUSIÓN AMBIENTAL 
+			https://www.youtube.com/watch?v=T0QnbCeXKT4&list=PLXtVivrBaK3KNvPg4PV1fxXoWbilhJyKJ&index=5&hd=1
+
+
+
+	Ambient Occlusion en C4D (AO Nativo de C4D)
+		https://www.youtube.com/watch?v=m0N7xI2mIlU
+
+
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+
+		
+	Ambient Occlusion:
+	__________________
+
+
+	1_en "Vray/options/lighting/Default lights/", las colocamos en "OFF", desacivamos las luces por defecto de vray
+
+
+	2_en "Vray/Enviroment/Background Enviroment/", colocamos su color a negro y bajamos el brillo a "0", para que 
+
+	así, éste no nos afecte en el resultado del AO
+
+
+	3_desactivar GI, en "Vray/Indirect illumination (GI)/Indirect illumination (GI)/GI on", la deschequeamos 
+
+	desactivandola
+
+
+	4_ahora creamos un material "Material/File/VrayBridge/VrayAdvancedMaterial"
+
+
+		4.1_ha este material lo renombramos ej: AO
+
+
+		4.2_le desactivamos el "Difiuse Layer"
+
+				
+		4.3_le activamos el "Luminosity Layer"
+
+
+		4.3.1_en "Luminosity Layer/Luminosity Layer Transparency/Amount/", lo bajamos a "0"
+
+
+		4.3.2_en "Luminosity Layer/Luminosity Layer Parameters/Use VRayDirt/", lo activamos haciendo cheker 
+
+		en el mismo
+
+	
+			4.3.2.1_y ahora en las opciones que han abierto ""Luminosity Layer/Luminosity Layer/Radius", 
+
+			colocamos un radio promedio de "25", este valor es la profundidad ó amplitud de la AO
+
+
+			4.3.2.2_en el "Falloff ó decaimiento", colocamos un valor equivalente a la mitad del que 
+
+			posumos en "Radius", en este caso colocariamos un valor de "15"
+
+
+			4.3.2.3_en "Subdivision", colocaremos un valor promedio de "25", entendiendo que las 
+
+			subdivisiones se refieren directamente a la resolución ó calidad del AO
+
+
+			5_ahora sobre escribimos los materiales de la escena por el material que hemos creado y 
+
+			preparado
+
+
+				5.1_por último vamos a "Vray/Options/Materials/Override material/", hacemo checker, 
+
+				sobre este activandolo
+
+
+				5.2_ahora arrastramos el material que creamos "AO", y lo soltamos en la casilla de 
+
+				materiales de "Vray/Options/Materials/Override material/"
+
+
+
+			6_ahora salvamos y hacemos el render para obtener el map AO
+
+				6.1_vamos a "Render Settings/Save/", y escogemos una ruta y un nombre
+
+				6.2_procedemos ha hacer el render 
+
+				6.3_Enjoy!
+
+
+
+
+
+
+					

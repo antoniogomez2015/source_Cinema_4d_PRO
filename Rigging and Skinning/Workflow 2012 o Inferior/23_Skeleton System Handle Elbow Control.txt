@@ -1,0 +1,121 @@
+
+
+
+Riggings in Cinema 4D (mi version C4D-R12)
+
+
+	digital tutors - character rigging in cinema 4d
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+Skeleton System Bípedo Kinematics Workflow:
+
+
+
+Note:	workflow, de la creación de character, bípendo de la mano de la gente DigitalTutors, para Cinema 4D 
+
+	del curso "digital tutors - character rigging in cinema 4d"
+
+
+
+Rename:	las diferentes chains, ó cadenas es altamente recomendable renombrarlas con nombres característicos
+
+	los cuales nos permiten reconocer éstas rápidamente y, sobre todo las el proceso de emparentamiento
+
+	manual el cuál, es parte fundamental de proceso de rigging
+
+
+-----------------------------------------------------------------------------------------------------------
+
+
+
+	Skeleton System Shoulder Handle Control:
+	________________________________________
+
+
+	-----------------------------------------------------------------------------------------------
+
+
+
+	Spline:
+	_______
+
+
+	_primero debemos crear un spline, la cuál, hará de handle, controlador del sistema del arm ó
+
+	brazo, específicamente el codo ó elbow
+
+
+	_luego debemos colocar éste sobre la altura del codo ó elbow
+
+
+
+	Pivot:
+	______
+
+	_luego debemos colocar su pivot, en el joint, correspondiente al codo, del brazo
+
+
+
+	Free Transformation:
+	____________________
+
+	_luego debemos hacer free transformation, de la posición y propiedades de ésta nueva spline,
+
+	que hemos creado
+
+
+	Color:
+	______
+
+	_también, es recomendable asignarle un color característica ha esta spline
+
+
+
+	Rename:
+	_______
+
+	_así, como renombrar ésta ej: "L_Handle Elbow"
+
+
+
+	-----------------------------------------------------------------------------------------------
+
+
+
+	Parent:
+	_______
+
+
+	_en este caso, continuando con el paso anterior del "handle hand control", para la mano, volvamos
+
+	a las opciones del "IK", del arm, ó brazo
+
+
+	_y vamos a las opciones de "IK/Attributes/Tag/Pole Vertor/Oject"
+
+
+	_así, en la sección de "Object", debemos arrastrar el respectivo handle, que controlará el codo, en
+
+	este caso es "L_Handle Elbow"
+
+
+	_así, podremos ver que al mover el "L_handle Elbow", se moverá también el sentido de la articulación
+
+	ó joint, del arm, brazo
+
+
+	_y para finalizar podremos ahora arrastrar el "L_Handle Elbow", dentro la estructura del brazo 
+
+	"L_Arm Root", para que así, este respectivo handle sea movido por el sistema general
+
+
+
+	
+
+
+	

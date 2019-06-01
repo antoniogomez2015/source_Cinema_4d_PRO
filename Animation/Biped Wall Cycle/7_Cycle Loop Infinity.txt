@@ -1,0 +1,72 @@
+
+
+
+Riggings in Cinema 4D (mi version C4D-R12)
+
+
+	digital tutors - character rigging in cinema 4d
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+Skeleton System Bípedo Kinematics Workflow:
+
+
+
+Note:	workflow, de la creación de character, bípendo de la mano de la gente DigitalTutors, para Cinema 4D 
+
+	del curso "digital tutors - character rigging in cinema 4d"
+
+
+
+Rename:	las diferentes chains, ó cadenas es altamente recomendable renombrarlas con nombres característicos
+
+	los cuales nos permiten reconocer éstas rápidamente y, sobre todo las el proceso de emparentamiento
+
+	manual el cuál, es parte fundamental de proceso de rigging
+
+
+-----------------------------------------------------------------------------------------------------------
+
+
+
+	Scene Frames Cycles:
+	____________________
+
+
+
+	-----------------------------------------------------------------------------------------------
+
+
+
+	Cycle Loop Infinity:
+	____________________
+
+
+	
+
+	_en este proceso nos permitirá animar de forma indefinida el ciclo de animación del 
+
+	walk cycle, del character set, de forma automática
+
+
+	_para ésto, seleccionamos todos los handles, animables del character, a través, de su tag
+
+	de selección de handles, en el explorer
+
+
+	_luego, con éstos seleccionados vamos al "F_Curve Editor", y seleccionamos todos los 
+
+	keyfrmaes, existentes a través, del shortcut "Control + A" 
+
+
+	_posteriormente vamos ha las opcioens de "F_Curve Editor/Functions/Track Before/Repeat",
+
+	y luego vamos a las opciones de "F_Curve Editor/Functions/Track After/Repeat", así, habremos
+
+	creado el cycle loop, del walk cycle
+
+	

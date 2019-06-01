@@ -1,0 +1,219 @@
+
+
+
+Riggings in Cinema 4D (mi version C4D-R12)
+
+
+	digital tutors - character rigging in cinema 4d
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+Skeleton System Bípedo Kinematics Workflow:
+
+
+
+Note:	workflow, de la creación de character, bípendo de la mano de la gente DigitalTutors, para Cinema 4D 
+
+	del curso "digital tutors - character rigging in cinema 4d"
+
+
+
+Rename:	las diferentes chains, ó cadenas es altamente recomendable renombrarlas con nombres característicos
+
+	los cuales nos permiten reconocer éstas rápidamente y, sobre todo las el proceso de emparentamiento
+
+	manual el cuál, es parte fundamental de proceso de rigging
+
+
+-----------------------------------------------------------------------------------------------------------
+
+
+
+	Skeleton System Foot-Toe Handle Rig Meta Torso:
+	_______________________________________________
+
+
+
+	-----------------------------------------------------------------------------------------------
+
+
+
+	Spline:
+	_______
+
+
+	_primero debemos crear un spline, a través, de una de las herramientas de bezier, como también,
+
+	por medio de las formas geométricas estándar
+
+
+	_esta forma es recomentable que tenga una forma referencia y en proporción a la forma del
+
+	elemento a controlar ej, un pie, mano, cadera, otros
+
+
+	-----------------------------------------------------------------------------------------------
+
+
+
+	Rename:
+	_______
+
+
+	_es altamente recomendable renombrar esta spline, que hará de handle, controlador de una de las 
+
+	partes del character, ej: "L_Foot Handle Meta Torso"
+
+
+	
+
+	-----------------------------------------------------------------------------------------------
+
+
+
+	Pivot:
+	______
+
+
+	_ahora hay que colocar el punto de pivote, de la spline, que hará de handle, en el punto de pivote
+
+	de la articulación ó joint, a controlar, en este caso el pie, en la sección de la bola del pie
+
+
+	_para esto, debemos seleccionar la spline, respectiva e ir a las opciones de edición de pivot, en el
+
+	panel de herramientas izquierdo
+
+
+	_para esto, debemos tener activadas las opciones de "Snap/3D Snapping, y Axis Snapping"
+
+
+	_luego ahora si, debemos colocar el pivot, de la spline, en este caso en el "Root", del bone,
+
+
+	ó bola del pie, ó meta tarso, en el caso de los finger, debemos colocar el pivot, en la punta
+
+	de los dedos 'o en el efector de esta cadena respectiva, en el caso del talón, ó heel,es 
+
+	recomendable colocar el pivot, en el base del talón
+
+
+	_y, para finalizar la operación volvemos a colocar la acción de pivote normal para así, el pibote, de
+
+	la spline, quede permanentemente en la posición del tobillo ó efectos de la pierna y haga una 
+
+	articulación correcta en relación a la pierna y al pie
+
+
+
+
+	-----------------------------------------------------------------------------------------------
+
+
+
+	Free Transformations:
+	_____________________
+
+
+	_para el proceso de riggings, es altamente aconsejable resetear las propiedades de transformación
+
+	de los elementos utilizados como handles, y controladores del sistema 
+
+
+	_para que éstos, siempren mantengan y tengan la posibilidad de volver a posición inicial u original
+
+
+	_para esto, seleccionamos la spline, handle, deseada y, vamos a las opciones de: 
+
+	"Attributes/Free Transformation/", y le damos ha "Free All"
+
+
+	_así, todas las propiedades tomarán el valor de "0"
+				
+
+
+	-----------------------------------------------------------------------------------------------
+
+
+	Parent:
+	_______
+
+
+	_ahora para que la spline, handle, que controlará el pie ó tobillo, funcione, debemos emparentar
+
+	las cadenas, ó chains, del pie
+
+
+	_primero arrastramos "L_Foot Handle Meta Torso", dentro de "L_Foot Handle Fingers"
+
+	_luego arrastramos "L_Foot Handle Fingers", dentro de "LFoot Handle Heel"
+
+
+	_luego arrastramos "L_Foot Handle Hell", dentro de "L_Foot Handle Tobillo"
+
+
+
+	_quedando la siguiente estructura:
+
+
+		_"L_Foot Handle Tobillo"
+
+			_"LFoot Handle Heel"
+
+				_"L_Foot Handle Fingers"
+
+					_"L_Foot Handle Meta Torso"
+
+
+
+	_ahora arrastramos "L_Meta Torso Root", dentro de "L_Foot Handle Meta Torso", para que así,
+
+	éste sea controlado por el handle respectivo
+
+		_así, el pie podrá rotar desde la bola del pie, moviendo así, todo el pie y la pierna
+
+
+	_ahora arrastramos "L_Leg Fingers Root", dentro de "L_Foot Handle Fingers", para que así,
+
+	éste sea controlado por el handle respectivo
+
+		_así, el pie podrá rotar a partir de la punta del pie, como también podrá levantar
+
+		el pie a partir de la punta del mismo pie
+
+
+	_al quedar "L_Foot Handle Heel", sobre "L_Foot Handle Fingers", y "L_Foot Handle Meta Torso",
+
+	
+		_así, este controlará a los demás en su movimiento natural que levantar el pie desde 
+
+		su base y, a su vez, el movimiento rotativo de talón
+
+
+	
+	
+	-----------------------------------------------------------------------------------------------
+
+
+	Color:
+	______
+
+
+	_para esto, seleccionamos la spline, de handle, deseado y vamos a las opciones de: 
+
+	"Basic Properties/Use Color", y actiovamos esta opción "On"
+
+
+	_así, podremos seleccionar un color respectivo para los controladores del lado izquierdo para
+
+	que éstos se diferencien de los elementos del lado derecho				
+
+
+
+
+
+

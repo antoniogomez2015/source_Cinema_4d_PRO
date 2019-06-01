@@ -1,0 +1,108 @@
+
+
+
+Riggings in Cinema 4D (mi version C4D-R12)
+
+
+	digital tutors - character rigging in cinema 4d
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+Skeleton System Bípedo Kinematics Workflow:
+
+
+
+Note:	workflow, de la creación de character, bípendo de la mano de la gente DigitalTutors, para Cinema 4D 
+
+	del curso "digital tutors - character rigging in cinema 4d"
+
+
+
+Rename:	las diferentes chains, ó cadenas es altamente recomendable renombrarlas con nombres característicos
+
+	los cuales nos permiten reconocer éstas rápidamente y, sobre todo las el proceso de emparentamiento
+
+	manual el cuál, es parte fundamental de proceso de rigging
+
+
+-----------------------------------------------------------------------------------------------------------
+
+
+
+	Scene Frames Cycles:
+	____________________
+
+
+
+	-----------------------------------------------------------------------------------------------
+
+
+
+	Contact Step/Pose Frame 17:
+	___________________________
+
+
+	
+	Reverle Legs:
+	_____________
+
+
+	_en este frame debemos intercambiar la posición de las piernas ó handles, de las piernas pero 
+
+	manteniendo la misma posición entre las piernas intercambiadas para crear así el loops, entre ambas
+
+
+	_para ésto, debemos tomas las cordenadas de "Translastion", de una de los handles, y pergarlos en el
+
+	otro handle, respectivo pero a su vez, antes de hacer esto debemos tomar nota también de las cordenadas
+
+	"Translation", del otro handle, para luego pegarlos en el otro handle que ya hemos movido, así, las piernas
+
+	intercambiarán de posición
+
+
+	_el proceso anterior lo debemos repetir tanto para los bones, de "Foot Ball", y "Foot Talon", respectivamente
+	
+	para que así, se mantengan de forma reflejada las mismas propiedades en el intercambio de piernas ó legs
+
+
+	_así, deberán ser intercambiados los calores de:
+
+	
+		_L/R_Handle_Foot
+
+		_L/R_Foot_Ball
+
+		_L/R_FootHeel (talón)
+
+
+
+
+	Reverse Torso and Head:
+	_______________________
+
+
+	_más ahora para cerrar el ciclo, debemos copiar los keyframes, del "Frame 1", al "frame 33", para que
+
+	así, se cierre el ciclo de animación de las piernas
+
+
+	_ahora debemos invertir los valores de rotación del "Handle-Hip", cadera y "Handle-Chest", ó torax, 
+
+	"Handle-Head"cambiando así, los valores que están en positivos cambiarlos a negativos y viceversa
+
+
+
+	Reverse Arms Shoulders and Hands:
+	_________________________________
+
+
+	_así, podremos ver que haremos un cycle, de todas las partes del body, animadas actualmente
+
+
+
+

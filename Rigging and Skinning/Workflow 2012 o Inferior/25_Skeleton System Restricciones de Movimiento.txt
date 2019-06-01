@@ -1,0 +1,86 @@
+
+
+
+Riggings in Cinema 4D (mi version C4D-R12)
+
+
+	digital tutors - character rigging in cinema 4d
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+Skeleton System Bípedo Kinematics Workflow:
+
+
+
+Note:	workflow, de la creación de character, bípendo de la mano de la gente DigitalTutors, para Cinema 4D 
+
+	del curso "digital tutors - character rigging in cinema 4d"
+
+
+
+Rename:	las diferentes chains, ó cadenas es altamente recomendable renombrarlas con nombres característicos
+
+	los cuales nos permiten reconocer éstas rápidamente y, sobre todo las el proceso de emparentamiento
+
+	manual el cuál, es parte fundamental de proceso de rigging
+
+
+-----------------------------------------------------------------------------------------------------------
+
+
+
+	Skeleton System Restricciones de Movimiento:
+	____________________________________________
+
+
+	-----------------------------------------------------------------------------------------------
+
+
+
+	Xpresso:
+	________
+
+
+	_tenemos la posibilidad de limitar atributos de acción de un elemento determinado como por ejemplo
+
+	un handle
+
+
+	_para esto, debemos seleccionar el elemento deseado e ir ha "Tags/Cinema 4d Tags/Xpresso", así, se
+
+	abrirá el panel de "Xpresso"
+
+
+	_ahora debemos arrastrar el elemento deseado desdo el explorer al panel de xpresso, así se creará 
+
+	una nodo con el elemento deseado ó arrastrado
+
+
+	_luego sobre el input, del nodo del elemento deseado debemos hacer ej: "mouse right click/Cordinates
+
+	/Rotation/Rotation", así, a través, de éste método podemos agregar atributos a controlar sobre el 
+
+	nodo deseado
+
+
+	_ahora debemos crear los nos nodos de interés a relacionar con el nodo deseado para esto, debemos hacer
+
+	"mouse right click/New Node/XPresso/General/Constant"
+
+
+	_ahora entramos a las opciones del nodo "Constant", y en las opciones de "Data Type", seleccionamos la
+
+	opción de "Vector", y en dichos valores en este colocaremos 1/1/1, para que así, la escala en este caso
+
+	del handle, siempre sea de "1", y no pueda ser escalable
+
+
+	_de esta manera repitiendo este paso con sus respectivas variantes podremos ajustar y restringir los 
+
+	elementos deseados a nuestras necesidades
+
+	

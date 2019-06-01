@@ -1,0 +1,212 @@
+
+
+
+Riggings in Cinema 4D (mi version C4D-R12)
+
+
+	digital tutors - character rigging in cinema 4d
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+Skeleton System Bípedo Kinematics Workflow:
+
+
+
+Note:	workflow, de la creación de character, bípendo de la mano de la gente DigitalTutors, para Cinema 4D 
+
+	del curso "digital tutors - character rigging in cinema 4d"
+
+
+
+Rename:	las diferentes chains, ó cadenas es altamente recomendable renombrarlas con nombres característicos
+
+	los cuales nos permiten reconocer éstas rápidamente y, sobre todo las el proceso de emparentamiento
+
+	manual el cuál, es parte fundamental de proceso de rigging
+
+
+-----------------------------------------------------------------------------------------------------------
+
+
+
+	Skeleton System Pseudo Character Set:
+	_____________________________________
+
+
+	-----------------------------------------------------------------------------------------------
+
+
+
+	Null Object:
+	____________
+
+
+	_es recomendable organizar todos los elementos del character, de un sólo grupo, tanto el "Global Control",
+
+	como demás elementos complementarios al character, así, como también, la geometría que lo compone, 
+
+	desbloquedando ésta de su layer, ó capa
+
+
+	_para esto, vamos ha "Object/Null" y, arrastramos todos los elementos ó partes del character, dentro
+
+	de "Null Object", para así, controlar todo el character, a través, de éste elemento único
+
+
+	_otra opción sería seleccionar todos elementos que forman parte del character, disponibles en el exploer
+
+	y presionar "Alt + G", para así, crear un nuevo grupo con éstos
+
+
+	_este nuevo grupo que representará el character, lo podemos renombrar ej: "Character Set"
+
+
+	
+	-----------------------------------------------------------------------------------------------
+
+
+
+	XPresso:
+	________
+
+
+	_ahora podemos seleccionar tambien, el elemento que tiene la etiqueta ó "Tag/XPresso", con todos los
+
+	nodos con las restricciones de los elementos
+
+
+	_seleccionando así, el "Tag/XPresso", y ahora debemos arrastrarlo hasta el nuevo grupo que hemos creado
+
+	para manejar todo el character, en este caso es "Character Set", de esta manera tendremos todos los
+
+	controles a la mano a la hora de tener que hacer alguna ecepcción 
+
+
+	_es recomentable tamién, incluir dentro de los nodos de retricción al nuevo "Null", que hemos creado
+
+	para controlar el character, en su totalodad, este es "Character Set", para que así, éste nos pueda
+
+	recibir transformaciones tanto de escala, rotación y translación
+
+
+
+	-----------------------------------------------------------------------------------------------
+
+
+
+	Selection Master Handles:
+	_________________________
+
+
+	_es altamente recomendable el hacer un elemento de selección con todos los handles, del character,
+
+	para así, tener todos los handles, disponibles y seleccionados en un sólo click, esto es especialmente
+
+	útil para el proceso de animación y character set, propiamente dicho
+
+
+	_para esto, es recomendable que todos los elementos handles, tengan la nomenclatura ó prefijo ej: "hn",
+
+	para asó, poderlos seleccionar fácilmente a través, del "filter", del explorer
+
+
+	_así, ya con todos los handles, seleccionados vamos ha "Object/Scene/Selection", así se creará en el
+
+	explorer un elemento de tipo "Selection", con el cuál, ahora con un par de clicks, podremos seleccionar
+
+	todos los elementos handles, incluidos en la sección de éste
+
+
+	_este elemento de tipo selection, lo podemos renombrar ej: "Handles Master Selection"
+
+
+	_este elemento de tipo selection, ahora lo debemos arrastrar dentro del elemento "null", que hemos 
+
+	creado para manejar todo el character, este es "Character Set", para que a´si, éste elemento de 
+
+	selección sea parte del character set
+
+
+
+	-----------------------------------------------------------------------------------------------
+
+
+
+	Free Transformation Handles:
+	____________________________
+
+
+	_es altamente recomendable hacer free transformation, de todos los elementos handles, esto es 
+
+	especialmente útil para el proceso de animación y específicamente de "Pose", otros
+
+
+	_para esto, la opción más fácil es seleccionar primero todos los handles, a través, del elemento
+
+	de selección que hemos creado haciendo mouse double click, sobre el ícono del elmento de selección,
+
+	luego con todos los elementos handles, seleccionados vamos a las opciones de "Attributes/Coods",
+
+	y hacemos "Freeze All"
+
+	
+	_a parte de la opción anterior es altamente recomnedable rectificar uno a uno por si alguno no haya
+
+	aceptado el proceso del paso anterior
+
+
+
+	-----------------------------------------------------------------------------------------------
+
+
+
+	Lock Mesh:
+	__________
+
+
+	_es altamente recomendable bloquear a selecciones la layer, correspondiente a la mesh, del character set,
+
+	para que así, ésta no sea seleccionada accidentalmente, esto nos permite una mayor movilidad en el
+
+	proceso de animación, otros, ya que así, sólo serán seleccionables los handles, del character, y no la
+
+	mesh, respectiva
+
+
+
+
+	-----------------------------------------------------------------------------------------------
+
+
+
+	Character Set:
+	______________
+
+
+	_es posible la creación de un control del character set, de animación a través, del elemento de selección
+
+	que creamos para los handles, del character
+
+
+	_así, a la hora de animar el character, que hemos creado y configurado en el sistema de rig, debemos ir
+
+	a las opciones de los íconos de animación en la barra inferior del timeline
+
+
+	_de esta manera debemos "mouse left click", sobre el ícono "?", y seleccionar el nombre que le hayamos
+
+	puesto al elemento de selecciona que hemos creado dentro del character, que hemos creado, en este caso
+
+	"Handles Master Selection"
+
+
+	_de esta manera al aplicar "Keys Frames", ya no se aplicarán a la opción por defecto "Active Object",
+
+	si no, al grupo de selección que hemos indido el cuál, responde a todos los handles, del character,
+
+"	a la vez, esto es especialmente útil para hacer animaciones de "character set"
+

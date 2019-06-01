@@ -1,0 +1,179 @@
+
+
+
+Riggings in Cinema 4D (mi version C4D-R12)
+
+
+	digital tutors - character rigging in cinema 4d
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+Skeleton System Bípedo Kinematics Workflow:
+
+
+
+Note:	workflow, de la creación de character, bípendo de la mano de la gente DigitalTutors, para Cinema 4D 
+
+	del curso "digital tutors - character rigging in cinema 4d"
+
+
+
+Rename:	las diferentes chains, ó cadenas es altamente recomendable renombrarlas con nombres característicos
+
+	los cuales nos permiten reconocer éstas rápidamente y, sobre todo las el proceso de emparentamiento
+
+	manual el cuál, es parte fundamental de proceso de rigging
+
+
+Note:	la modalidad "Pole Vector", sólo funciona con sistemas que tiene Kinemática Invertida, ósea, que
+
+	tienen aplicada la "Tag../IK"
+
+
+-----------------------------------------------------------------------------------------------------------
+
+
+
+	Skeleton System Handle Rig Leg Pole Vector:
+	___________________________________________
+
+
+
+	-----------------------------------------------------------------------------------------------
+
+
+
+	Spline:
+	_______
+
+
+	_primero debemos crear un spline, a través, de una de las herramientas de bezier, como también,
+
+	por medio de las formas geométricas estándar
+
+
+	_esta forma es recomentable que tenga una forma referencia y en proporción a la forma del
+
+	elemento a controlar ej, un pie, mano, cadera, otros
+
+
+	-----------------------------------------------------------------------------------------------
+
+
+
+	Rename:
+	_______
+
+
+	_es altamente recomendable renombrar esta spline, que hará de handle, controlador de una de las 
+
+	partes del character, ej: "L_Leg Handle Pole Vector"
+
+
+	
+
+	-----------------------------------------------------------------------------------------------
+
+
+
+	Pivot:
+	______
+
+
+	_en este caso, lo más recomendable es que el pivot, se encuentre en la masa de la forma de la
+
+	spline, respectiva que hará, de handle del pole vector
+
+
+
+	-----------------------------------------------------------------------------------------------
+
+
+
+	Free Transformations:
+	_____________________
+
+
+	_para el proceso de riggings, es altamente aconsejable resetear las propiedades de transformación
+
+	de los elementos utilizados como handles, y controladores del sistema 
+
+
+	_para que éstos, siempren mantengan y tengan la posibilidad de volver a posición inicial u original
+
+
+	_para esto, seleccionamos la spline, handle, deseada y, vamos a las opciones de: 
+
+	"Attributes/Free Transformation/", y le damos ha "Free All"
+
+
+	_así, todas las propiedades tomarán el valor de "0"
+				
+
+
+
+	-----------------------------------------------------------------------------------------------
+
+
+	Setings:
+	________
+
+
+	_primero debemos ubicar el bone, ó chain, cadena que tiene aplicada la etiqueta/tag, "IK"
+
+
+	_luego vamos a las opciones de la tag IK, en "IK/Tag Properties/Tag/Pole Vector/Object"
+
+
+	_en este punto, debemos arrastrar la spline, que hará de handle del pole vector, dentro del
+
+	campo "Object", así, quedará la spline, relacionada con el sistema "IK", y hará ahora las
+
+	funciones de pole vector ó "Knee", ó rodilla
+
+
+
+
+	-----------------------------------------------------------------------------------------------
+
+
+	Parent:
+	_______
+
+
+	_ahora para que la spline, handle, que controlará el pie ó tobillo, funcione, debemos emparentar
+
+	las cadenas, ó chains, del pie, ya que éstos a su vez, controla la pierna
+
+
+	_para esto, debemos seleccionar en este caso el "_L_Leg Fingers Root", y arrastrarlo sobre el
+	
+	"L_Foot Handle", así, el elemento handle "L_Foot Handle", controlará al pie ó foot
+
+	
+	
+	-----------------------------------------------------------------------------------------------
+
+
+	Color:
+	______
+
+
+	_para esto, seleccionamos la spline, de handle, deseado y vamos a las opciones de: 
+
+	"Basic Properties/Use Color", y actiovamos esta opción "On"
+
+
+	_así, podremos seleccionar un color respectivo para los controladores del lado izquierdo para
+
+	que éstos se diferencien de los elementos del lado derecho				
+
+
+
+
+
+

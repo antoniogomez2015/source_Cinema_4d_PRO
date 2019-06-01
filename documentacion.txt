@@ -1,0 +1,30 @@
+
+Menús
+
+	V = barra de opciones generales
+
+	p = menú snap options 
+___________________________________________ 
+
+
+
+Tags
+
+	Tags/CINEMA 4D Tags/
+
+		Restriction: permite restringir la acción de elementos como modificadores a determinadas áreas ó sub elementos de una mesh
+
+
+
+
+
+_________________________________________________________
+
+
+Modify
+
+	Observacion: los  modificadores se colocan dentro de las mesh ó elementos a modificar
+
+	Spherify: permite esferizar elementos
+
+

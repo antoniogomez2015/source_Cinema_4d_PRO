@@ -1,0 +1,55 @@
+
+
+
+	Cinema 4D Mograph
+
+		Fracture
+
+			EXPERIMENTO MOGRAPH - TUTORIALE CINEMA 4D
+
+				https://www.youtube.com/watch?v=P1ENciXLdKY&list=PLNhqGZVtzwiWEJ0bS_2pCrChKOVuTqdGy
+
+
+
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+Referencia:
+___________
+
+	_éste efecto es recomendable para elementos que se compondan de sub-elementos fragmentados como pos ejemplo las faces 
+
+	separadas de una espera entre otras muchas posibilidades
+
+
+
+Fracture:
+_________
+
+	_al crear un elemento "Mograph/Fracture", y hacer un motivo hijo de éste elemento fracture, haremos que nuestro motivo
+
+	y sus partes sean suceptibles ha animación vía mograph
+
+
+	_de ésta manera, ahora podremos agregar un efecto mograph, como por ejemplo "Mograph/Effector/Formula", para que se agrege
+
+	automáticamente a la lista del "Fracture/Effector", así, podremos ir agregando más "effectors", ó ir eliminando de ésta lista
+
+
+	_de ésta manera, podremos ir animando y haciendo elementos interactivos por medio de motor mograph
+
+
+	_y una forma de darle volúmen de forma dinámica a los sub-elementos del motivo que hemos fragmentado para el sistema es a 
+
+	través del motor de cloth
+
+
+	_para ésto, debemos seleccionar el elemento motivo en el outiner con "Alt", para luego ir a "Simulation/Cloth/Cloth NURBS",
+
+	de ésta manera, el elemento motivo será hijo del elemento Cloth NURBS, en el outliner, para que así, en las opciones del 
+
+	elemento "Cloth NURBS/Object/Thickness", podamos asignarle un grosor e los sub-elementos
+
+

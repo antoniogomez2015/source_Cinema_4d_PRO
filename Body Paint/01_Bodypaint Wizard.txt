@@ -1,0 +1,295 @@
+
+
+
+Body Paint Cinema 4D
+
+	TUTORIAL CINEMA 4D - BODYPAINT BASICO
+		https://www.youtube.com/watch?v=Cbxo1RRabPE
+
+	
+	MODELA Y TEXTURIZA EN BODY PAINT UN PANTALON VAQUERO
+		https://www.youtube.com/watch?v=_PS9T1VTElw
+
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+General:
+________
+
+
+	_primero debemos de tener creado nuestro motivo, éste debe ser un objeto editable para que así, éste tenga una 
+
+	etiqueta ó tag de UVW, y Normal
+
+
+	_así, como también, éste motivo debe de tener aplicado previamente el proceso de uvmap, para que así, la textura 
+
+	generada pueda proyectarse de forma correcta y ordenada sobre la mesh, proyectada
+
+
+	_luego, debemos aplicar un material ha nuestro motivo a menos que éste ya posea un material para que así, a través, 
+
+	del cuál, podamos asignarle las diferentes texturas deseadas ha editar
+
+
+
+Asistente Bodypaint:
+____________________
+
+	_bodypaint, dispone de un asistente el cuál, nos permite despreocuparnos de los requisitos necesarios para poder 
+
+	pintar sobre un motivo así, el asistente puede encargarse de los diferentes procesos como uvmap, crear un material, 
+
+	crear las texturas deseadas, crear las layers, repectivas
+
+
+	_y para hacer uso del asistente de boypaint, debemos estar en el modo de "DP 3D Paint", ó en el modo "DP UV Edit", 
+
+	así, podremos acceder al botón "BodyPaint 3d Setup Wizard", a través, del cuál, podremos seguir una serie de pasos 
+
+	"steps", hasta finalizar el proceso de configuración en general para poder así, comenzar ha pintar sobre el motivo 
+
+	correctamente
+
+
+
+	Step 1 Select Objects:
+
+		_ésta opción nos permitirá seleccionar entre "objects", y "materials", por lo general seleccionaremos objects, 
+
+		entre la lista de elementos disponibles para a continuación darle ha "next", para continuar con el siguiente 
+
+		paso
+
+
+
+	Step 2 UV Setup:
+
+		_ésta opción nos permite recalcular los uvs, en caso de que el motivo no disponga del proceso de uvmap, creado 
+
+		previamente y en caso de que motivo ya disponga del proceso de uvmap, creado previamente entonces, debemos 
+
+		deschequear ésta opción para que así, no la tome en cuenta en el proceso
+
+
+		_así, si seleccionamos la opción de "Recalculate UV", el sistema recalculará los uvs, bajo dos criterios similares 
+
+		"Optimal", en la versión "Cubic", y "Angle", y en ambos hará una proyección de las cuatro vistas axonométricas y 
+
+		fragmentará los uvs, en la textura, la mejor recomendación para tal caso es la opción de "Angle", ya que ésta 
+
+		mantiene las "islan", más unidas y uniformes y grandes que el método "Cubic"
+
+
+		_y la opcion de "Single Material Mode", nos permite indicarle al sistema que sólo utilizaremos un solo material 
+
+		para el motivo sea que el motivo disponga ya de un material ó que no disponga con ningún material previamente 
+
+		para a continuación darle ha "next", para seguir con el siguiente paso
+
+
+
+	Step 3 Material Options:
+
+		_ésta opción nos permite crear diferentes tipos de "texturas", para editar en el proceso de pintura, de ésta manera,
+
+		el sistema le agregará éstas nuevas texturas generadas al material del motivo en los cuales se volcará el proceso 
+
+		de pintura que generemos
+
+
+
+		_Create Missing Materials:
+
+			_si el motivo no dispone de una material debemos activar ésta opción para así, el sistema le agrege un nuevo 
+
+			material al motivo
+
+
+
+		_Create/Delete Channels:
+
+			_debemos de activar ésta opción para que así, el sistema cree nuevos canales en relación para la cantidad 
+
+			de texturas generadas, así, el sistema creará un conal por ejemplo para el color, otros para el nomal y así 
+
+			sucesivamente
+
+
+			_así, el sistema generará un canal para cada textura con la siguiente nomenclatura a través, de siglas 
+
+			identificativas:
+
+
+				_Color: C
+
+				_Luminance: L
+
+				_Transparency: Tr
+
+				_Reflection: R
+
+				_Enviroment: E
+
+				_Bump: B
+
+				_Alpha: AL
+
+				_Specular Color: S
+
+				_Displacement: Di
+
+				_Diffusion: Di
+
+				_Normal: N
+
+
+			_para a continuación procede ha seleccionar las texturas que deseamos que el sistema genere sobre el material; 
+
+			entre las cuales disponemos de las siguientes:
+
+
+
+				_Color:
+
+					_ésta textura lo podemos crear del color que más nos convenga en relación a nuestro motivo
+
+		
+				_Diffussion:
+
+					_a la hora de hacer una creación manual de texturas para el bodypaint, debemos de crear ésta 
+
+					textura de
+
+					color "Blanco"
+
+
+				_Luminance:
+
+					_a la hora de hacer una creación manual de texturas para el bodypaint, debemos de crear ésta 
+
+					textura de color "Negro"
+
+
+
+				_Transparency:
+
+					_a la hora de hacer una creación manual de texturas para el bodypaint, debemos de crear ésta 
+
+					textura de color "Negro"
+
+
+
+				_Reflection:
+
+					_a la hora de hacer una creación manual de texturas para el bodypaint, debemos de crear ésta 
+
+					textura de color "Negro"
+
+
+
+				_Enviroment:
+
+					_a la hora de hacer una creación manual de texturas para el bodypaint, debemos de crear ésta
+
+					textura de color "Negro"
+
+
+
+				_Bump:
+
+					_a la hora de hacer una creación manual de texturas para el bodypaint, debemos de crear ésta 
+
+					textura de color "Gris 50%"
+
+
+
+				_Alpha:
+
+					_a la hora de hacer una creación manual de texturas para el bodypaint, debemos de crear ésta 
+
+					textura de color "Blanco"
+
+
+
+				_Specular Color:
+
+					_a la hora de hacer una creación manual de texturas para el bodypaint, debemos de crear ésta 
+
+					textura de color "Blanco"
+
+
+	
+				_Displacement:
+
+					_a la hora de hacer una creación manual de texturas para el bodypaint, debemos de crear ésta 
+
+					textura de color "Negro"
+
+
+
+				_Normal:
+
+					_a la hora de hacer una creación manual de texturas para el bodypaint, debemos de crear ésta 
+
+					textura de color "Blanco"
+
+
+
+
+		_Rescale Existing Textures:
+
+			_si tenemos texturas aplicadas previamente sobre el material debemos activar ésta opción para que así, el 
+
+			sistema rescale las texturas a las dimensiones indicadas en éste proceso y no haya disparidad entre las 
+
+			diferentes texturas
+
+
+			_para a continuación indicar el tamaño de las texturas deseados a través, del "Texture Size", "Minimum", 
+
+			"Maximo", así, éste tamaño de textura será apliado a las texturas ha generar y a las existentes previamente
+
+
+		Automatic Mapsize Interpolation:
+
+			_es aconsejable activar ésta opción para así, el sistema haga una interpolación entre el tamaño de los mapas 
+
+			ha generar y los existentes de ser el caso
+
+
+
+		_para leugo darle ha next, y finalizar el procesos de creación guiada del sistema para que así, podamos proceder ha 
+
+		pintar sobre el motivo directamente ó en el plano de uvmaps
+
+
+
+_luego de haber creado y editado las texturas sobre nuestro character, podemos guardarlas ó exportarlas para seguir editandolas con 
+
+photoshop, para ésto, vamos ha "File/Save Texture Ass", ó "Save All Textures", de ésta manera podremos abrir las texturas en photoshop, 
+
+continuar con el proceso de edición
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

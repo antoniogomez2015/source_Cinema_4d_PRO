@@ -1,0 +1,229 @@
+
+
+
+Riggings in Cinema 4D (mi version C4D-R12)
+
+
+	digital tutors - character rigging in cinema 4d
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+Skeleton System Bípedo Kinematics Workflow:
+
+
+
+Note:	workflow, de la creación de character, bípendo de la mano de la gente DigitalTutors, para Cinema 4D 
+
+	del curso "digital tutors - character rigging in cinema 4d"
+
+
+
+Rename:	las diferentes chains, ó cadenas es altamente recomendable renombrarlas con nombres característicos
+
+	los cuales nos permiten reconocer éstas rápidamente y, sobre todo las el proceso de emparentamiento
+
+	manual el cuál, es parte fundamental de proceso de rigging
+
+
+-----------------------------------------------------------------------------------------------------------
+
+
+
+	Inverse Kinematic:
+	__________________
+
+
+
+	-----------------------------------------------------------------------------------------------
+
+
+
+	Flexor:
+	_______
+
+
+	_para agregar la inversa kinemática, primero debemos seleccionar el bone, anterior ó superior 
+
+	de la cadena ó chain, el cuál, hará la flexión de la articulación ó joint
+
+
+	-----------------------------------------------------------------------------------------------
+
+
+
+	IK:
+	___
+
+
+	_así, el bone, respectivo seleccionado en este ejemplo es el bone "L_Femur", luego vamos a las opciones 
+
+	de "Explorer/Tags/Character Tags/IK", así, se agregará ésta etiqueta de control al bone, deseado
+
+
+	_el siguiente ejemplo es con la estructura de una pierna ó leg:
+
+
+		_"L_Leg Root"
+
+			_"L_Femur"
+
+			(Tag: IK)
+
+				_"L_Tibia"
+
+					__"L_Leg Eff"
+
+
+
+	-----------------------------------------------------------------------------------------------
+
+
+
+	IK Attributes:
+	______________
+
+
+		Tag Properties:
+		_______________
+
+
+		_Use IK:
+
+			_
+
+
+		_End:
+
+			_en esta opción debemos arrastrar el efector de la cadena deseada ó de trabajo
+
+			en este ej: "L_Leg Eff"
+
+
+		_Goal:
+
+			_luego que hemos indicado en el paso anterior cuál será el efector de trabajo, 
+
+			debemos luego crear el controlador IK
+
+			
+			_para ésto, debemos darle ha "Add Goal", así, se agregará en el explorer, en la
+
+			misma cadena ó chain, el siguiente elemento en este ej: "L_Leg Eff.Goal", el cuál,
+
+			podremos renombrar para un mejor reconocimiento, ej: "L_Leg IK"
+
+
+			_así, el mover este nuevo controlador ik, podremos ver que ahora la cadena deseada
+
+			de muevo con inversa kinemática
+
+
+		_IK/FK:
+
+			_
+
+
+		_Strengh:
+
+			_
+
+
+		_Preferred Rot:
+
+			_
+
+
+		_Goal Offset
+
+
+
+		Pole Vector:
+		____________
+
+
+		_Axis:
+
+			_
+
+
+		_Twist:
+
+			_
+
+
+		_Object:
+
+			_
+
+
+		_Add Pole:
+
+			_
+
+
+
+		Squash/Stretch:
+		_______________
+
+
+		_Stretch:
+
+			_al aumentar este valor lograremos que los elemento IK, emparentados ha elementos
+
+			como bones, permacezcan siempre juntos ante rotaciones ámplias ó extremas
+
+
+		_Distance:
+
+			_
+
+
+		_Squash:
+
+			_
+
+		
+		_Distance:
+
+			_
+		
+		
+				
+
+
+	-----------------------------------------------------------------------------------------------
+
+
+	Parent:
+	_______
+
+
+	_más para que cuando flexione el pie en la bola del pie y, que la pierna se articule también,
+
+	en ese sentido con kinemática inversa, es preciso que emparentemos el "L_Leg IK", que creamos
+
+	con el bone "L_Meta Tarso", para que así, cunado éste articule, articule también la pierna
+
+
+	_para ésto, seleccionamos el controlador "L_Leg IK", y, lo arrastramos sobre "L_Meta Tarso",
+
+	así, podremos ver que al rotar el "L_Meta Tarso", rotará también, la pierna
+
+
+	_más para que los elementos Ik, emparentas permanezcan siempre juntos en rotaciones extremas
+
+	es aconsejable activar la opción "Squash/Stretch/Stretch: 100%"
+
+
+	
+					
+
+
+
+
+
+

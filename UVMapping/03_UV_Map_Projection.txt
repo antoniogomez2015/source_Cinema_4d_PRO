@@ -1,0 +1,119 @@
+
+
+UvMapping proceso general
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+	Projecting:
+	___________
+
+	_de ésta manera, ya hemos realizado una selección de un área a través, de la selección de sub-elementos faces,
+
+	y de haver pasado al modo UV, a través, de los botones "UV Point", y "UV Polygons", podremos ahora si realizar
+
+	las proyección deseada
+
+
+	_para lo cuál, debemos de ir al panel de "UV Mapping", ubicado en la parte inferior derecha en el cuál, debemos 
+
+	de activar el tag, de "Projection"
+
+
+	_y en el cuál, debemos de seleccionar uno de los algoritmos de proyección donde cada uno de éstos obedece a 
+
+	criterios diferentes los cuáles son los siguientes:
+
+
+		_Sphere:
+
+			_proyección esférica, proyección envolvente especialmente útil para objeto esféricos
+
+
+		_Cylinder:
+
+			_proyección cilíndrica, proyección envolvente especialmente útil para objeto cilíndricos
+
+
+		_Frontal:
+
+			_proyección de la vista de la cámara del viewport, especialmente útil para obtener proyecciones
+
+			personalizadas de la vista del viewport 3d
+
+
+		_Flat:
+
+			_proyección lateral y estirada en el canvas, especialmente para determinadas proyecciones
+
+
+		_Cubic:
+
+			_proyección la cuál, busca la forma natural del objeto en relación al área seleccionada, éste
+
+			es el algoritmo más recomendado para la mayoría de los procesos
+
+
+		_Cubic 2:
+
+			_éste es una variante del proceso y algoritmo anterior
+
+
+		_Box:
+
+			_éste modo de proyección funciona de una forma similar al cubic
+
+
+		_Shrink:
+
+			_éste modo de proyección también, buscará la mejor proyección en relación al área seleccionada
+		
+			en relación a la forma natural del objeto más éste tratará de estirar y virar la proyección en
+
+			el área del canvas
+
+
+
+	_de ésta manera, al proyectar el área seleccionada a través, de cualquiera de éstos algoritmos es que podremos
+
+	posterioremente editar éstas áreas ó islan, en el panel "Texture", estando en modo "UV"
+
+
+	_más para poder visualizar el uvs, generados en el panel texture, debemos ir al panel, outliner, y allí, 
+
+	posarnos sobre el ícono del material y hacer "mouse right click", para que así, nos aparesca el menú contextual
+
+	en el cuál, debemos de seleccionar la opción de "Generate UVW Coordinates"
+
+
+	_así, posteriormente podremos ir al panel "BP UV Edit/Texture/UV Mesh/Show UV Mesh", en dado caso que no podamos 
+
+	ver los respectivos uvs, proyectados en el paso anterior
+
+
+	_para posteriormente proceder ha editar y acomodar los islans, dentro del canvas del texture panel, para lo cuál,
+
+	debemos de seleccionar primeramente los uvs, ó islans, proyectadas a través, de las herramientas de seleccionar de 
+
+	"brush, lazo, rectangle"
+
+
+	_para posteriormente proceder luego de haber seleccionado un islan, ha mover, rotar y escalar a través, de las
+
+	herramientas de "translate", shortcut, "E", "rotate", shortcut "R", y "scale", shortcut "T", haciendo 
+
+	"mouse left click and drag", sobre cualquier área del canvas en panel texture
+
+
+	_de ésta manera, podremos ajustar y acomodar todas las islans, de la forma más conveniente distribuidas en el canvas
+
+	del panel texture
+
+
+
+
+
+
+

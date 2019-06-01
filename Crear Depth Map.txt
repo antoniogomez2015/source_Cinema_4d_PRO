@@ -1,0 +1,17 @@
+
+	
+Cinema 4D, Crear un Depth Map pass
+
+
+	1_crear la escene deseada
+
+	2_crear una camara la cual se proyecte ó abarque la produndidad de la escena
+
+		2.1_Focus Distance: permite ajustar la proyección ó distancia de la cámara
+
+
+	3_activar la opción de multipass en la sección de render setting
+
+	4_en la sección multipass cargar el pass "Depth"
+
+	5_configurar las rutas de salidas tanto del beauty pass como del multipass depth

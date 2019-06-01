@@ -1,0 +1,272 @@
+
+
+
+Riggings in Cinema 4D (mi version C4D-R12)
+
+
+	digital tutors - character rigging in cinema 4d
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+Skeleton System Bípedo Kinematics Workflow:
+
+
+
+Note:	workflow, de la creación de character, bípendo de la mano de la gente DigitalTutors, para Cinema 4D 
+
+	del curso "digital tutors - character rigging in cinema 4d"
+
+
+
+Rename:	las diferentes chains, ó cadenas es altamente recomendable renombrarlas con nombres característicos
+
+	los cuales nos permiten reconocer éstas rápidamente y, sobre todo las el proceso de emparentamiento
+
+	manual el cuál, es parte fundamental de proceso de rigging
+
+
+-----------------------------------------------------------------------------------------------------------
+
+
+
+	Skeleton System Shoulder Handle Hand Fingers Control:
+	_____________________________________________________
+
+
+	-----------------------------------------------------------------------------------------------
+
+
+
+	Spline:
+	_______
+
+
+	_primero debemos crear un spline, la cuál, hará de handle, controlador del sistema del hand/fingers ó
+
+	mano/dedos
+
+
+	_luego podremos crear otra spline, la cuál, utilizaremos las demás articulaciones ó joint, secundarias
+
+	para las demás partes de los dedos de las manos,
+
+
+	_luego debemos colocar éste sobre la altura de los dedos ó fingers, respectivo
+
+
+
+	Pivot:
+	______
+
+	_luego debemos colocar su pivot, en el root, de cada finger, respectivamente
+
+	
+
+	Free Transformation:
+	____________________
+
+	_luego debemos hacer free transformation, de la posición y propiedades de ésta nueva spline,
+
+	que hemos creado
+
+
+	Color:
+	______
+
+	_también, es recomendable asignarle un color característica ha esta spline
+
+
+
+	Rename:
+	_______
+
+	_así, como renombrar ésta ej: (finger chain)
+
+
+		"L_Handle Hand Finger Pinky hn"
+
+		"L_Handle Hand Finger Ring hn"
+
+		"L_Handle Hand Finger Midle hn"
+
+		"L_Handle Hand Finger Index hn"
+
+		"L_Handle Hand Finger Thumb hn"
+
+
+
+
+	-----------------------------------------------------------------------------------------------
+
+
+
+	Parent:
+	_______
+
+
+	_en este caso, debemos arrastrar todos los handles, descritos en el paso anterior de todos los dedos 
+
+	dentro del carpo-meta carpo "L_Meta Carpo bn"
+
+
+	_ahora debemos arrastrar cada de una de las cadenas ó chains, ó root, de los fingers, dentro de su
+
+	respectivo "handle fingers", para que así, cada cadena de fingers, sea manejada por su respectivo
+
+	handle, controlador
+
+
+	quedandonos la siguiente estructura en este ejemplo por cada dedo ó finger, respectivo:
+
+
+
+
+		_"L_Handle Hand Finger Pinky Control 1 hn"-------------------controlador principal
+			
+
+			_"L_Hand Pinky Finger Root"--------------------------cadena de huesos bone chain
+
+				_"L_Hand Pinky Finger 1 bn"
+
+					_"L_Hand Pinky Finger 2 bn"
+
+						_""L_Hand Pinky Finger 3 bn"
+
+							_"L_Hand Pinky Eff bn"
+
+
+
+
+
+	-----------------------------------------------------------------------------------------------
+
+
+
+	Add Data:
+	_________
+
+
+	_ahora debemos agregar los controladores para demás joint, ó articulaciones de los dedos ó fingers,
+
+	a través, del mismo handle, que hemos creado para controlar las cadenas de los fingers
+
+
+	_para esto, primero seleccionamos el handle, respectivo a un determinado finger, deseado luego, con
+
+	éste seleccionado vamos a las opciones de "Attributes/User Data/Add User Data"
+
+
+	_así, tendremos que crear un nuevo grupo "Add Group", éste lo desanclamos que esté en nuevo grupo
+
+	de propiedades, este nuevo grupo lo renombramos ej: "Finger Control"
+
+
+	_luego podemos arrastrar la "Data", disponible en "User Data (Default), a nuestro grupo ó darle ha
+
+	"Add Data", para este proceso se requerirán dos datas a las cuales les asignaremos los siguientes
+
+	nombres ej: "Midle Joint", y "End Joint", que corresponderán huesos de las articulaciones de los dedos
+
+	desde su unión con el meta carpo hasta la punta de los dedos, éstas datas tendrán las siguientes 
+
+	características:
+
+
+
+	Midle Joint/End Joint:
+	______________________
+
+
+	
+		_Name:
+
+			_le pondremos un nombre característico ej "Midle Joint / End Joint"
+
+
+		_Unit:
+
+			_en este caso lo más conveniente y lógico es escoger "Grados"
+
+
+		_Step:
+
+			_entre menor sea el valor que indiquemos tendremos más precisicón en el slider 
+
+			controlador, en este caso colocaremos un valor de "0.001"
+
+		
+		_Limit Min:
+
+			_aqui tendremos que indicar el máximo de rotación que tendrá la articulación en su 
+
+			estado natural (rotación hacia abajo), en este eej: es "-24"
+
+
+		_Limit Max:
+
+			_aqui tendremos que indicar el míximo de rotación que tendrá la articulación en su 
+
+			estado no natural (rotación hacia arriba), en este eej: es "3"
+
+
+		_Default Value:
+
+			_este valor lo dejamos en "0", por defecto
+
+
+
+
+	_de esta manera podremos ver que mover los attributos que hemos creado "Midle Joint/End Joint", se
+
+	moverán las respectivas articulaciones ó joint, con sus respectivas herencias ó bones encadenados
+
+		
+	_este proceso lo debemos repetir para todos los controladores ó handles, de los respectivos dedos
+	
+	ó fingers
+
+	
+
+	-----------------------------------------------------------------------------------------------
+
+
+
+	Setting Data:
+	_____________
+
+
+	_ahora debemos relacionar los elementos controladores con los elementos a controlar
+
+
+	_para ésto, seleccionamos el handle, del finger, respectivo y, con éste seleccionado vamos a sus
+
+	opciones de "Attributes/Finger Control/", y seleccionamos la propiedad que hemos creado preaviamente
+
+	y que deseamos relacionar ej: "Midle Joint", luego hacemos "mouse right click", sobre ésta y vamos 
+
+	ha las opciones de "Animation/Set Driver"
+
+
+	_ahora seleccionamos el elemento a manejar en este caso es el bone, del joint del dedo ej: 
+
+	"L_Handle Pinky Finger 2 bn", y vamos ha sus atributos "Attributes/Coord", y seleccionamos la 
+
+	cordenada de rotación deseada según la cinemática del character, luego hacemos "mouse right click",
+
+	sobre ésta y seleccionamos la opción de "Animation/Set Driven (Relative)"
+
+
+	_de esta manera al bone, respectivo se le habrá agregado una etiqueta ó tag, de "Expresso", controlador
+
+
+	_etos pasos debemos repetirlos para todos los fingers, deseados a controlar
+
+
+
+
+
+	

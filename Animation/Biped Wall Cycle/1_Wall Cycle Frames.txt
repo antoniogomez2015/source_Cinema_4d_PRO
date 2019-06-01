@@ -1,0 +1,126 @@
+
+
+
+Riggings in Cinema 4D (mi version C4D-R12)
+
+
+	digital tutors - character rigging in cinema 4d
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+Skeleton System Bípedo Kinematics Workflow:
+
+
+
+Note:	workflow, de la creación de character, bípendo de la mano de la gente DigitalTutors, para Cinema 4D 
+
+	del curso "digital tutors - character rigging in cinema 4d"
+
+
+
+Rename:	las diferentes chains, ó cadenas es altamente recomendable renombrarlas con nombres característicos
+
+	los cuales nos permiten reconocer éstas rápidamente y, sobre todo las el proceso de emparentamiento
+
+	manual el cuál, es parte fundamental de proceso de rigging
+
+
+-----------------------------------------------------------------------------------------------------------
+
+
+
+	Scene Frames Cycles:
+	____________________
+
+
+
+	-----------------------------------------------------------------------------------------------
+
+
+
+	Document C4D:
+	____________
+
+
+	_para acceder a las propiedades del documento para configurar la escena para la realización del 
+
+	clip, de animación de wall cycle, podemos hacerlos a través, del shortcut "Control + D"
+
+
+
+	_FPS:
+
+		_24
+
+
+	_Minimum Time:
+
+		_1
+
+
+	_Preview Min Time:
+
+		_1
+
+
+	_Document Time:
+
+		_17
+
+
+	_Maximum Time
+
+		_33
+
+
+	_Preview Max Time:
+
+		_33
+
+
+
+	-----------------------------------------------------------------------------------------------
+
+
+
+	Frame Cycle Steps/Poses:
+	________________________
+
+
+	_Contact: (f: 1,17 & 33)
+
+		_esta pose se conforma de las dos piernas extendidas ó climax, del loops, así, este 
+
+		paso se repetirá ó coincidirá en el principio y el final de la animación
+
+
+	_Down: (f: 5 & 21)
+
+		_esta pose se conforma de las dos piernas flexionadas ó el paso más bajo u opuesto del
+
+		loops
+
+
+	_Passing: (f: 9 & 25)
+
+		_esta pose se conforma de las dos piernas en transición, en este caso la pierna derecha,
+
+		en un arco medio, los pasos intermedio sirven para alcanzar tanto el climax, de la animación 
+
+		como el opuesto ó paso más bajo de la animación
+
+
+	_Peak: (f: 13 & 29)
+
+		_esta pose se conforma de las dos piernas en transición, en este caso la pierna derecha,
+
+		en un arco alto, los pasos intermedio sirven para alcanzar tanto el climax, de la animación 
+
+		como el opuesto ó paso más bajo de la animación
+
+
+

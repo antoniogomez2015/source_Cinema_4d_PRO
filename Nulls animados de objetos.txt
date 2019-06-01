@@ -1,0 +1,23 @@
+
+Convertir elementos de Cinema 4D, en objetos "Nulls", para After Effects con sus trayectorias de animación incluidas para seguimiento
+
+
+	1_a cualquier elemento dentro de Cinema 4d, como geometría, cámaras y luces, se pueden convertir sus referencia de animación y ubicación para ser utilizada
+	en After Effects como elementos "Nulls", para esto al elemento deseado se le debe agregar una etiqueta; "ElementoDeseado/Tags/CINEMA 4D Tag/External Compositing",
+	así, este elemento será tomado en cuenta a la hora de exportación del proyecto para After Effects
+
+	2_ahora vamos a las propiedades de "Render Setting", en Cinema 4D
+
+		2.1_en "Render Setting/Output", seleccionamos el formato y aspecto de salida
+		
+		2.2_ en "Render Setting/Output", en "Frame Range", indicamos "All Frames", indicamos "Manual", para asignar un rango determinado de animación deseado
+
+	3_en "Save", indicamos una ruta y formato de salida
+
+	4_en "Save/Compositing Proyect File", indicamos las opciones de "Save", y "Include 3D Data"
+
+	5_en "Save/Compositing Proyect File", le damos a "Save Proyect File", para que así, exportemos el proyectos con los objectos nulls, creados y configurados por nosotros en la escena
+
+	6_por último vamos a After Effects e importamos el proyecto que exportamos en Cinema 4D "Enjoy!!"
+
+ 

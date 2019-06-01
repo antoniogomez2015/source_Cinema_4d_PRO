@@ -1,0 +1,135 @@
+
+
+
+
+
+
+referencia:
+
+	mamecomdb
+
+		VRAY PARA CINEMA 4D MULTIPASS: 
+			https://www.youtube.com/watch?v=y3br8sLu-28&list=PLXtVivrBaK3KNvPg4PV1fxXoWbilhJyKJ&index=3&hd=1
+
+
+
+
+
+
+-------------------------------------------------------------------------------------------------------------------------
+
+
+	MultiPass:
+	__________
+
+
+	DESCRIPCIÓN:
+	
+	_El proceso de multipas permite obtener las porpiedades 3d, com por ejemplo; las reflexiones, especularidad,
+
+	sombras, luces, ambient oclcusion, depth map, normal, diffuse, otros, por separado 
+
+
+	_así, como tmabién, sacar pases de elementos aislados en renders ó canales a parte de los demás
+
+
+
+	DESCRIPCIÓN:
+	
+	_Vray, cuenta con una etiqueta de "Compositing", la cuál podemos agregarla a cualquier elemento que desiemos 
+
+	que interactua de forma diferente de la que biene por defecto ej: que sea visible ó nó, que reciba luces, 
+
+	sombras, otros
+
+
+
+
+	Proceso de creación y activación del multipass:
+		
+	
+	1_en las opciones generales de de render de cinema 4d, activamos ó "chequeamos",las opciones de (Multi Pass)
+
+	
+	2_en las opciones de multipass, tanto si le damos botón derecho sobre el tag, multipass, como si lo hacemo en
+
+	las opciones directas de multipass de la parte inferior, debemos seleccionar ó activar las opciones de 
+
+	("Post Effects")
+
+
+	_para que así, activemos las opciones de multipass effects, de esta manera quedarán activadas las opciones 
+
+	de multipass de vray
+
+
+	3_ahora vamos a las opciones de render de "VrayBridge/Multi Pass/Standard Vray buffer -  Advance Vray buffer - 
+
+	Depth Vray buffer - ID Buffer y activamos los pases deseamos haciendo chequers en los deseados
+
+	
+	4_por último vamos a las opciones de "Save/Regular Image - Multi Pass image", y allí indicamos las rutas de 
+
+	salida tanto de la imágen conjunta como de las imágenes multipass
+
+
+
+
+	Descripciones generales de los tipos PASS en vray:
+
+
+		Standard Vray buffer:
+
+			Estos pases contemplan los pases más convencionales como shadows, reflection, refraction, 
+
+			otros				
+
+
+		Advanced Vray buffer:
+				
+			Estos pases contemplan los crudos ó "RAW", de los pases primarios ó standards
+
+			
+		Depth Vray buffer:
+
+			Estos pases nos permiten optener los canales depth, normals, velocity pixel
+
+
+		ID Buffer:
+
+			Estos pases nos permiten obtener pases por IDs:
+
+
+			RenderID:
+
+			_Convierte todos los elementos a colores planos en un pass conjunto para ser seleccionado 
+
+			en posproducción
+
+
+
+			MaterialI0:
+
+			_Permite hacer un pass, a través del color del ID, del material asignado a las diferentes 
+
+			meshes en la escena, la cuál creará una pass, conjunto de ellos para ser seleccionados en pos 
+
+			roducción
+
+
+
+			ObjectID:
+
+			_Permite seleccionar elementos a través de la tag, de 
+
+			"Cinema 4d/Tag/CINEMA 4D Tags/Compositing/objet Buffer/Enable", las cuales convertirá en un 
+
+			pass, de elementos planos en conjunto para ser seleccionados en posproducción
+
+
+
+
+
+
+
+

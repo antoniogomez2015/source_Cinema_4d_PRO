@@ -1,0 +1,44 @@
+
+
+
+	Cinema 4D Mograph
+
+		Fracture
+
+			EXPERIMENTO MOGRAPH - TUTORIALE CINEMA 4D
+
+				https://www.youtube.com/watch?v=P1ENciXLdKY&list=PLNhqGZVtzwiWEJ0bS_2pCrChKOVuTqdGy
+
+
+
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+Referencia:
+___________
+
+	_para aplicar éste effector, correctamente el motivo debe de tener un elemento conector del motor mograph, como por ejemplo,
+
+	un elemento de tipo "Mograph/Fracture"
+
+
+
+Fracture:
+_________
+
+	_éste efector nos permite hacer efectos rítmicos de módulos de una forma fragmentada previamente ha modo de strands, 
+
+	especialmente para motion graphycs, y otras posibilidades de producción e integración
+
+
+	_éste efector ya biene animado así, podremos hacer loops, de las diferentes loops, generados por el sistema
+
+
+
+
+
+
+
+

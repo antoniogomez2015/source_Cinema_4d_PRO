@@ -1,0 +1,105 @@
+
+
+
+Riggings in Cinema 4D (mi version C4D-R12)
+
+
+	digital tutors - character rigging in cinema 4d
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+Skeleton System Bípedo Kinematics Workflow:
+
+
+
+Note:	workflow, de la creación de character, bípendo de la mano de la gente DigitalTutors, para Cinema 4D 
+
+	del curso "digital tutors - character rigging in cinema 4d"
+
+
+
+Rename:	las diferentes chains, ó cadenas es altamente recomendable renombrarlas con nombres característicos
+
+	los cuales nos permiten reconocer éstas rápidamente y, sobre todo las el proceso de emparentamiento
+
+	manual el cuál, es parte fundamental de proceso de rigging
+
+
+-----------------------------------------------------------------------------------------------------------
+
+
+
+	Skeleton System Pseudo Character Set:
+	_____________________________________
+
+
+	-----------------------------------------------------------------------------------------------
+
+
+
+	Bone Selection Master:
+	______________________
+
+
+	_es recomendable primero hacer un elemento de selección con todos los bones, del skeleton system,
+
+	del character set
+
+
+	_para esto, es recomendable que primero todos los bones, tengan la nomenclatura ó prefijo ej; "bn",
+
+	para así, poderlos seleccionar fácilmente a través, del "Filter", del explorer
+
+
+	_así, con todos los elementos bones, seleccionados vamos ha "Object/Scene/Selection", así, se creará
+
+	un elemento de selection, en el explorer, el cuál, contendrá toda la selección de todos los bones, 
+
+	seleccionados previamente, lo cuál, es preciso para el proceso de "Skinning", ó "Envelope"
+
+
+	_este elemento de selección que se ha agregado al explorer, lo podemos renombrar ej: 
+
+	"Bone Master Selection"
+
+
+	_también, a su vez, este elemento de selección "Bone Master Selection", lo debemos arrastrar dentro
+
+	del null, que hemos creado para manejar todo el character, éste es "Character Set"
+
+
+
+	-----------------------------------------------------------------------------------------------
+
+
+
+	Skinning Envelope:
+	__________________
+
+
+	_para este proceso primero seleccionamos todos los bones, a través, del elemento de selección de bones,
+
+	que hemos creado previamente, luego debemos selección la geometría que compone el character
+
+
+	_luego con ambos tipos de elementos seleccionados vamos ha "Character/Commands/", y aplicamos la opción
+
+	de "Bind"
+
+
+	_así, al elemento mesh, ó a la geometría del character, se le agregará un tag, de "Weight", así como un
+
+	elemento hijo de tipo "Skin"
+
+
+	_así, podremos ver que ahora al articular cualquier handle, del character ó skeleton system, que la mesh,
+
+	del character, responde a los movimientos del mismo
+
+
+
+

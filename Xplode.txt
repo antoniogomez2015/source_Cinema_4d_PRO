@@ -1,0 +1,65 @@
+
+proceso para utilizar el efecto "xplode"
+
+canal de youtube: 
+	Carlos Quintero
+
+tutorial: Thinking Particles y X-plod en Cinema 4D
+	https://www.youtube.com/watch?v=K-0eig_Sr4I&hd=1
+
+
+1.creamos el motivo al cuál deseamos explosionar
+
+2.creamos el elemento el cuál utilizamos como elemento explosionador, éste de interceptar el elemento que deseamos explosionar
+
+3.creamos un sistema de particulas, para esto vamos al "content browser/presets/studio/simulation/thinking particles/presets/emiter/TP Volume Emiter/ha este le hacemos doble click y lo agregamos a la escena"
+
+4.luego abrimos el siguiente panel, yendo a: "simulation/thinkng particles/"thinking particles settings","
+
+5.luego abrimos el siguiente plugins, yendo a: "plugins/"xplode","
+
+6.ahora seleccionamos en el outliner el "TP Volume Emiter", y en sus propiedades:
+
+	6.1.en "poly object", arrastramos sobre éste, el elementos que hará de explosionador
+
+	6.2.en "particle group", arrastramos sobre éste, el "particle group", del panel de "thinking particles settings"
+
+	6.3.en "emiter type". seleccionamos "Rate"
+
+	6.4.en "particle number", solocamos "900"
+
+7.ahora debemos asignale un material el elemento explosionado, para esto, seleccionamos el material y arrastramos sobre el elementos explosionado
+
+8.ahora para asignarle un material el elemento explosionador, debemos arrastrar el material sobre el panel "xplode"
+
+9.ahora vamos a indicarle el "xplode", cuál será el elemento explosionador, para esto, en el panel "xplode", seleccionamos el ícono de explosionador (el tercer icono)
+
+	9.1.ahora seleccionamos en el outliner el elementos explosionador
+
+	9.2.luego vamos al panel "xplode", y le damos a "Scatter", así, se realizará el quebrado de los dos elementos intercectados, el explosionado y el explosionador
+
+	9.3.a partir de este punto de habrán creado en el outliner el elemento "Xplode Trash", y el "Pieces", el cuál contiene todas las piezas fragmentadas 
+
+10.en este punto podramos eliminar del outliner, los elementos "PT Volume Emiter", y el elemento, explosionar por que para los efectos ya no son impresindible
+
+11.para crear el efecto de explosión ya con los fragmentos, seleccionamos en el outliner el elementos "pieces", y vamos "MoGraph/Effector/Plain", así quedará relaciono el elemento "pieces", al efector "Plain"
+
+	11.1.en las propiedades del efector "plain", llevamos "Transform x-y-z, a cero"
+
+	11.2.en las propiedades "Falloff/Shape", seleccionaremos "Sphere", e incrementaremos la escala de esta sphere, a un tamaño superior proporcional al tamaño del explosionador
+
+12.creamos un elemento tipo suelo ó floor, y le agregamos el tag yendo a: Simulation/Dynamics/"Create Collider",
+
+13.y al elemento "Pieces", le asignamos un tag, haciendo right click sobre éste, yendo "Dynamics Tag/"Dynamics Body","
+
+	13.1.en los parámetro de la tag "Dynamics Body", en "Dynamics/Trigger", seleccionaremos "on Collision", para que el efecto sólo se ejecute a través del efector "Plain"
+
+	13.2.en los parámetro de la tag "Dynamics Body", en "Collision/Inhenit Tag", seleccionamos "Apply Tag to Children", para que así, le aplique el mismo efectos a los elementro que componen las partículas de la explosión
+
+	13.3.en los parámetro de la tag "Dynamics Body", en "Collision/Individual Elements", seleccionaremos "All"
+
+
+
+
+
+

@@ -1,0 +1,89 @@
+
+
+
+Riggings in Cinema 4D (mi version C4D-R12)
+
+
+	digital tutors - character rigging in cinema 4d
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+Skeleton System Bípedo Kinematics Workflow:
+
+
+
+Note:	workflow, de la creación de character, bípendo de la mano de la gente DigitalTutors, para Cinema 4D 
+
+	del curso "digital tutors - character rigging in cinema 4d"
+
+
+
+Rename:	las diferentes chains, ó cadenas es altamente recomendable renombrarlas con nombres característicos
+
+	los cuales nos permiten reconocer éstas rápidamente y, sobre todo las el proceso de emparentamiento
+
+	manual el cuál, es parte fundamental de proceso de rigging
+
+
+-----------------------------------------------------------------------------------------------------------
+
+
+
+	Scene Frames Cycles:
+	____________________
+
+
+
+	-----------------------------------------------------------------------------------------------
+
+
+
+	Down Step/Pose Frame 5 and 21:
+	______________________________
+
+
+	
+	Foot Cinematic:
+	_______________
+
+
+	_en este proceso debemos lograr una mejor cinemática entre pasos para así, 
+
+	conseguir una mejor transición y balance entre ambas posiciones de ambos pies 
+
+	ó piernas
+
+
+
+	_primero vamos al "frame 9", y seleccionamos el "L_Handle Foot", y lo desplazamos 
+
+	hacia adelante suavemente para dar la sensación de dar el paso y eliminar la sensación 
+
+	de arrastre del pie
+
+
+	
+	_así, como también, tendremos que subir el centro de gravedad del character, 
+
+	a través, del handle del "Hip", es recomendable subirlo la mitad de lo que bajamos
+
+	en la transición de las piernas en la pose del "frame 1", ej: si lo bajamos "Y=-150",
+
+	entonces lo subiremos "Y=-75"
+
+
+	_ahora debemos copiar el "keyframe 9", en el "keyframe 25", en el timeline, para así,
+
+	igular las acciones de animación entre ambas piernas ó legs
+
+
+	_por último copiaremos el valor de desplzamiento que le colocamos hacia adelante al handle
+
+	"L_Handle Foot", y se lo pegaremos al handle "R_Handle Foot", para que así, éste avance en
+
+	la misma proporción que la otra pierna ó pie	
+

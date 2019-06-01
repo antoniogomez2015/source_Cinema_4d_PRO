@@ -1,0 +1,148 @@
+
+
+
+Riggings in Cinema 4D (mi version C4D-R12)
+
+
+	digital tutors - character rigging in cinema 4d
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+Skeleton System Bípedo Kinematics Workflow:
+
+
+
+Note:	workflow, de la creación de character, bípendo de la mano de la gente DigitalTutors, para Cinema 4D 
+
+	del curso "digital tutors - character rigging in cinema 4d"
+
+
+
+Rename:	las diferentes chains, ó cadenas es altamente recomendable renombrarlas con nombres característicos
+
+	los cuales nos permiten reconocer éstas rápidamente y, sobre todo las el proceso de emparentamiento
+
+	manual el cuál, es parte fundamental de proceso de rigging
+
+
+-----------------------------------------------------------------------------------------------------------
+
+
+
+	Global Control:
+	_______________
+
+
+
+	-----------------------------------------------------------------------------------------------
+
+
+
+	Spline:
+	_______
+
+
+	_primero debemos crear un spline, a través, de una de las herramientas de bezier, como también,
+
+	por medio de las formas geométricas estándar
+
+
+	_esta forma es recomentable que tenga una forma referencia y en proporción a la forma del
+
+	elemento a controlar ej, un pie, mano, cadera, otros
+
+
+	-----------------------------------------------------------------------------------------------
+
+
+
+	Rename:
+	_______
+
+
+	_es altamente recomendable renombrar esta spline, que hará de handle, controlador todas las 
+
+	partes del character, ej: "Global Control"
+
+
+	
+
+	-----------------------------------------------------------------------------------------------
+
+
+
+	Pivot:
+	______
+
+
+	_en este caso, lo más recomendable es que la spline, tenga el pivot, en el centro de su masa
+
+	ó forma para que así mantenga su centro de gravedad de manejabilidad
+
+
+
+	-----------------------------------------------------------------------------------------------
+
+
+
+	Free Transformations:
+	_____________________
+
+
+	_para el proceso de riggings, es altamente aconsejable resetear las propiedades de transformación
+
+	de los elementos utilizados como handles, y controladores del sistema 
+
+
+	_para que éstos, siempren mantengan y tengan la posibilidad de volver a posición inicial u original
+
+
+	_para esto, seleccionamos la spline, handle, deseada y, vamos a las opciones de: 
+
+	"Attributes/Free Transformation/", y le damos ha "Free All"
+
+
+	_así, todas las propiedades tomarán el valor de "0"
+				
+
+
+	-----------------------------------------------------------------------------------------------
+
+
+	Parent:
+	_______
+
+
+	_para esto, debemos seleccioanr todos los elementos que conforman el character, en el explorer,
+
+	como chains, ó cadenas, handles, ó controladores y demás elementos que conformen el character
+
+
+	_luego de seleccionar todos los elementos deseados arrastramos éstos sobre el spline, que hará
+
+	de handle, maestro, este es "Global Control"
+
+	
+	
+	-----------------------------------------------------------------------------------------------
+
+
+	Color:
+	______
+
+
+	_para esto, seleccionamos la spline, de handle, deseado y vamos a las opciones de: 
+
+	"Basic Properties/Use Color", y actiovamos esta opción "On"
+
+
+	_así, podremos seleccionar un color distintivo de los utilizados para los lados left/right
+
+
+
+
+

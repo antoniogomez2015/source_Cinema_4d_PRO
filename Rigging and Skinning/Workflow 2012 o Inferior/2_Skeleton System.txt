@@ -1,0 +1,67 @@
+
+
+
+Riggings in Cinema 4D (mi version C4D-R12)
+
+
+	digital tutors - character rigging in cinema 4d
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+Skeleton System:
+
+
+	-----------------------------------------------------------------------------------------------
+
+
+	Layers:
+	_______
+
+
+	_es aconsejable organizar la escena antes de empezar y, por ejemplo ubicar el character, y toda
+
+	la geometría del character, dentro de una la layer, a la cuál, la podremos renombrar ej, "Model",
+
+
+	_esta layer, debemos hacer que ésta nos sea seleccionable para así, no nos moleste a la hoara
+
+	del trabajo con el skeleton system y rigging
+
+
+
+	-----------------------------------------------------------------------------------------------
+
+
+	Axonometric View:
+	_________________
+
+
+	_es aconsejable para la creación y colocación de los bones, del skeleton system, colocar el 
+
+	viewport, en una vista axonométrica, como por ejemplo "From/Left/Right", para tener así, una
+
+	mayor presición en el proceso
+
+
+
+ 	-----------------------------------------------------------------------------------------------
+
+
+	Joint/Bones:
+	____________
+
+
+	_para aplicar ó crear bones, ó skeletons systems, vamos ha "Character/Joints Tools" 
+
+
+	_así, nos aparecerá la herramienta con la cuál, podremos ir creanbones bones, para esto,
+
+	debemos hacer "Control + Mouse Left Click", repetidas veces, en los puntos en donde 
+
+	deseadomos colocar las articulaciones deseadas, así, entre éstas se irán creando ó agregando 
+
+	los respectivos bones

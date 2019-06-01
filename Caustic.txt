@@ -1,0 +1,48 @@
+
+caustic en cinema 4d
+
+1.al motivo debemos asignale un materia con transparencia activada y a la transparencia debemos colocarle un poco de "refraction: ej: "1.06","
+
+
+SURFACE CAUSTIC
+
+2.crearemoa una luz direccional "spot", y colocaremos la proyección de luz de manera que ésta atraviese el motivo
+
+3.en las propiedades de la luz activaremos las opcciones de Caustic/Surface Caustic
+
+	3.1.energy: equivale a la fuerza ejercida sobre el motivo para generar el efecto caustico 
+
+	3.2.Photons: equivale a la cantidad de photones aplicada sobre el motivo para generar el efecto caustico 
+
+4.en las propiedades de render debemos activas las opciones de "Effect/Caustic/Surface Caustic"
+
+
+VOLUME CAUSTIC
+
+5.debemos activar en las opciones de la luz "Spot/General/Visible Light/Volumetric"
+
+6.en las opciones de render debemos activar las opciones de "Effect/Caustic/Volume Caustic"
+
+	6.1.Strengh: equivale a la fuerza ejercida sobre la fuerzas de la físicas de la luz visible proyecta sobre y atravezando el motivo
+
+	6.2.Step Size: cuando más pequeño es el tamaño del paso mayor es el realismo, entre más pequeño es el paso es mayor la interpolación entre photones
+
+	6.3.Sample Radius: cuanto más grande sea el tamaño de muestra más realismo obtendrá
+
+	6.4.Samples: se refiere a la cantidad de muestras que toma entre photon y photon para hacer una interpolación entre ellos, entre más grande sea la muestra el resultado será mejor
+
+
+7.Recompute: 
+	
+	7.1.first Time: en una escena solo se va ha calcular en el primer fotograma el arbol de luz de photones y para el resto de fotogramas no se va a calcular (para objetos estáticos)
+
+	7.2.Always: en una escena se calculará en cada fotograma el arbol de luz de photones (para objetos en movimiento)
+
+	7.3.Never: nunca será calculado el arbol de luz de photones
+
+
+8.Save Solution: esto permite guardar el cálculo anterior si la escena se mantedrá igual para un siguiente render
+
+9.Single Animation Solution: permite especificar que en la escena solo cambiará la posición de la cámara más no los objetos y las luces causticas
+
+

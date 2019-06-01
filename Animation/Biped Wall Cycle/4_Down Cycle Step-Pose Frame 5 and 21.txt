@@ -1,0 +1,113 @@
+
+
+
+Riggings in Cinema 4D (mi version C4D-R12)
+
+
+	digital tutors - character rigging in cinema 4d
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+Skeleton System Bípedo Kinematics Workflow:
+
+
+
+Note:	workflow, de la creación de character, bípendo de la mano de la gente DigitalTutors, para Cinema 4D 
+
+	del curso "digital tutors - character rigging in cinema 4d"
+
+
+
+Rename:	las diferentes chains, ó cadenas es altamente recomendable renombrarlas con nombres característicos
+
+	los cuales nos permiten reconocer éstas rápidamente y, sobre todo las el proceso de emparentamiento
+
+	manual el cuál, es parte fundamental de proceso de rigging
+
+
+-----------------------------------------------------------------------------------------------------------
+
+
+
+	Scene Frames Cycles:
+	____________________
+
+
+
+	-----------------------------------------------------------------------------------------------
+
+
+
+	Down Step/Pose Frame 5 and 21:
+	______________________________
+
+
+	
+	Foot Cinematic:
+	_______________
+
+
+	_en este proceso debemos lograr una cinemática en la articulación del pie para que éste se vea
+
+	más natural y más fluida en el movimiento y articulación de ambas piernas
+
+
+
+	_primero vamos al "frame 3 and 9", y colocamos los siguientes valores en "0"
+
+
+		_"R_Handle Heel"
+
+		_"R_Handle Ball"
+
+		_"R_Handle Fingers"
+
+		_"R_Handle Foot/P/Y"
+
+
+
+	_ahora vamos al "frame 19 y el 25", y colocamos los siguientes valores en "0"
+
+
+		_"L_Handle Heel"
+
+		_"L_Handle Ball"
+
+		_"L_Handle Fingers"
+
+		_"L_Handle Foot/P/Y"
+
+
+
+	_más ahora vamos al "frame f5 (L) y f21 (R)", y vamos el pie izquierdo / derecho,
+
+	y colocamos los valores en:
+
+
+		_"L/R_Handle Heel": "0"
+
+		_"L/R_Handle Ball": "0"
+
+		_"L/R_Handle Fingers": lo rotamos levantando la pierna sobre la punta 
+
+		del pie hasta que se vea bien y natural el movimiento
+
+
+
+	_más también, en el frame 5, debemos bajar el centro de gravedad del character,
+
+	a través, del Handle Hip, bajando éste en su cordenada "Y", tan sólo un poco
+
+
+	_ahora debemos copiar el frame 5, del timeline, y pegarlo en el frame 21, del 
+
+	timeline
+
+
+
+
+

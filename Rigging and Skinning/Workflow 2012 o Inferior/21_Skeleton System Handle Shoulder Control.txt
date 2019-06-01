@@ -1,0 +1,115 @@
+
+
+
+Riggings in Cinema 4D (mi version C4D-R12)
+
+
+	digital tutors - character rigging in cinema 4d
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+Skeleton System Bípedo Kinematics Workflow:
+
+
+
+Note:	workflow, de la creación de character, bípendo de la mano de la gente DigitalTutors, para Cinema 4D 
+
+	del curso "digital tutors - character rigging in cinema 4d"
+
+
+
+Rename:	las diferentes chains, ó cadenas es altamente recomendable renombrarlas con nombres característicos
+
+	los cuales nos permiten reconocer éstas rápidamente y, sobre todo las el proceso de emparentamiento
+
+	manual el cuál, es parte fundamental de proceso de rigging
+
+
+-----------------------------------------------------------------------------------------------------------
+
+
+
+	Skeleton System Shoulder Handle Control:
+	________________________________________
+
+
+	-----------------------------------------------------------------------------------------------
+
+
+
+	Spline:
+	_______
+
+
+	_primero debemos crear un spline, la cuál, hará de handle, controlador del sistema del hombro
+
+	ó shoulder
+
+
+	_luego debemos colocar éste a la altura de la escápula
+
+
+
+	Pivot:
+	______
+
+	_luego debemos color su pivot, en root, de la cadena del shoulder, 'o donde comienza la clav'icula
+
+	en este es el bone, 'o root "L_Shoulder Root"
+
+
+
+	Free Transformation:
+	____________________
+
+	_luego debemos hacer free transformation, de la posición y propiedades de ésta nueva spline,
+
+	que hemos creado
+
+
+	Color:
+	______
+
+	_también, es recomendable asignarle un color característica ha esta spline
+
+
+
+	Rename:
+	_______
+
+	_así, como renombrar ésta ej: "L_Handle Shoulder Root"
+
+
+
+	-----------------------------------------------------------------------------------------------
+
+
+
+	Parent:
+	_______
+
+
+	_primero debemos arrastrar el handle, que hemos creado para controlar el hombro, en este caso es el
+
+	handle, "L_Handle Shoulder Root", dentro del útimo bone de la espina dorsal ó columna vertebral ó spine,
+
+	en este caso el bone, "Spine_Chest_3 bn", más no en el efector de la cadena la columna, para así, la "spine", 
+
+	controle todo el sistema de hombro y brazo en general
+
+
+	_ahora debemos arrastar la cadena huesos ó bones, que hemos creado para el hombro ó shoulder, en este caso
+
+	es "Shoulder Root", la cuál, a su vez, contiene las cadenas "L_Arm Root", del branzo y, "L_Hand Fingers Roots",
+
+	debemos arrastrarla dentro del handle, "L_Handle Shoulder Root", para que a´si, ésta controle todo el hombro
+
+	y en su defecto al brazo, mano y dedos
+
+
+
+	

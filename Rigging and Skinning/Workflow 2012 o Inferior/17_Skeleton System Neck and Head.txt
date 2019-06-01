@@ -1,0 +1,150 @@
+
+
+
+Riggings in Cinema 4D (mi version C4D-R12)
+
+
+	digital tutors - character rigging in cinema 4d
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+Skeleton System Bípedo Kinematics Workflow:
+
+
+
+Note:	workflow, de la creación de character, bípendo de la mano de la gente DigitalTutors, para Cinema 4D 
+
+	del curso "digital tutors - character rigging in cinema 4d"
+
+
+
+Rename:	las diferentes chains, ó cadenas es altamente recomendable renombrarlas con nombres característicos
+
+	los cuales nos permiten reconocer éstas rápidamente y, sobre todo las el proceso de emparentamiento
+
+	manual el cuál, es parte fundamental de proceso de rigging
+
+
+-----------------------------------------------------------------------------------------------------------
+
+
+
+	Skeleton System Neck and Head:
+	______________________________
+
+
+
+	-----------------------------------------------------------------------------------------------
+
+
+
+	Skeleton/Neck:
+	______________
+
+
+	_primero debemos crear una cadena ó chain, que va desde la base de cuello ó neck, ó también,
+
+	a partir de la base de la columna ó efector de la "spine", hasta la base de la cabeza ó head,
+
+	así, esta cadena ó chain, dentra sólo un bone, quedando con la siguiente estructura:
+
+
+
+		_Neck Root
+
+			_Neck bn
+
+				_Neck Eff bn
+
+
+
+	-----------------------------------------------------------------------------------------------
+
+
+
+	Skeleton/Head:
+	______________
+
+
+	_luego debemos crear una cadena ó chain, que va desde la base de ls cabeza, ó head, hasta la 
+
+	coronilla de la cabeza	así, esta cadena ó chain, dentra sólo un bone, quedando con la 
+
+	siguiente estructura:
+
+
+
+		_Head Root
+
+			_Head bn
+
+				_Head Eff bn
+
+					
+	
+
+	-----------------------------------------------------------------------------------------------
+
+
+
+	Parent:
+	_______
+
+
+	_ahora debemos emparentar tanto la cadena "Neck Root", como la "Head Root", con el sistema
+
+	espinal y el sistema en general
+
+
+	-----------------------------------------------------------------------------------------------
+
+
+	_para esto, primero arrastramos el handle, que hemos creado para el cuello ó neck, éste es
+
+	"Handle Neck", lo arrastramos dentro del último bone, de la espina ó "Spine", pero no dentro del
+
+	efector de la espina ó columna vertebral, en este caso es bone, "Spine_Chest_3 bn"
+
+
+	_luego, arrastramos ahora si la cadena del cuello ó neck, "Neck Root",  dentro de su respectivo 
+
+	handle, "Handle Neck" que hemos creado para controlar ésta
+
+
+	-----------------------------------------------------------------------------------------------
+
+
+	_ahora debemos arrastramos el handle, que hemos creado para la cabeza éste es "Handle Head", lo 
+
+	arrastramos dentro del efector de la cadena del cuello ó neck, en este caso es el efector, 
+
+	"Neck Eff bn"
+
+
+	_luego, arrastramos ahora si la cadena de la cabeza "Head Root", dentro de su respectivo 
+
+	handle, "Handle Head" que hemos creado para controlar ésta
+
+
+	-----------------------------------------------------------------------------------------------
+
+
+	_así, podremos ver que ahora al mover tanto el handle, del cuello como el handle, de la cabeza
+
+	veremos que se mueven sus respectivas cadenas ó chains, más aún, si movemos ó articulamos el
+
+	sistema espinal ó principal se moverá también al unísono los sistemas del cuello y cabeza
+
+	
+
+	
+
+
+
+
+
+

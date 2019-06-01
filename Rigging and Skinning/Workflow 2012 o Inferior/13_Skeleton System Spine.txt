@@ -1,0 +1,240 @@
+
+
+
+Riggings in Cinema 4D (mi version C4D-R12)
+
+
+	digital tutors - character rigging in cinema 4d
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+Skeleton System Bípedo Kinematics Workflow:
+
+
+
+Note:	workflow, de la creación de character, bípendo de la mano de la gente DigitalTutors, para Cinema 4D 
+
+	del curso "digital tutors - character rigging in cinema 4d"
+
+
+
+Rename:	las diferentes chains, ó cadenas es altamente recomendable renombrarlas con nombres característicos
+
+	los cuales nos permiten reconocer éstas rápidamente y, sobre todo las el proceso de emparentamiento
+
+	manual el cuál, es parte fundamental de proceso de rigging
+
+
+-----------------------------------------------------------------------------------------------------------
+
+
+
+	Skeleton System Spine:
+	______________________
+
+
+
+	-----------------------------------------------------------------------------------------------
+
+
+
+	Bones:
+	______
+
+
+	_es conveniente ante de la creación de los bones, correspondientes a la spline, colocar el viewport,
+
+	en una de las vistas laterales, ej: left/rigit
+
+
+	_luego vamos a "Character/Joint Tool", para así, crear cuatro bones, distribuidos a lo largo
+
+	de la distancia ó tamaño de la columna, partiendo "Roots", desde la base de lacolumna ó del
+
+	hip, hasta la base del cuello ó neck
+
+
+
+	-----------------------------------------------------------------------------------------------
+
+
+
+	Chain:
+	______
+
+
+	_es conveniente renombrar esta cadena con la siguiente estructura ó similar:
+
+
+		_Spine Hip Root
+
+			_Spine Lumbar bn
+
+				_Spine Chest_1 bn 
+
+					_Spine Chest_2 bn
+
+						_Spine Chest_3 bn
+
+							_Spine Eff bn
+
+
+
+	-----------------------------------------------------------------------------------------------
+
+
+
+	Spline To Joints:
+	_________________
+
+
+	
+	_para esto, seleccionamos la cadena de la columna que hemos creado haciendo mouse midle click,
+
+	sobre ésta
+
+
+	_luego, con la chain, de la spine, seleccionada vamos ha "Character/Conversion/Spline To Joints"
+
+
+	_así, se creará una spline, con la forma y ubicación de la cadena de la spine, que hemos creado
+
+
+	_esta spline, que se ha creado tendrá la misma cantidad de sub-elementos que joints, en la spine,
+
+	ó columna vertebral
+
+	
+	_ésta spline, la podemos renombrar ej: "Spine_Dorsal"
+
+
+
+	Simplificación:
+	_______________
+
+
+	_más para el tipo de control que deseamos hacer es necesario eliminar la mayoría de éstos 
+
+	sub-elementos vertex, dejando así, sólo los del extremo, tanto el del inicio como el del final
+
+
+	_para ésto, entramos al modo de sub-elementos vertex, de la spline, y seleccionamos los vertex,
+
+	ha eliminar y luego le damos ha "Suprimir"
+
+
+	Bezier:
+	_______
+
+
+	_ahora debemos seleccionar esta spline, e ir a sus atributos "Attributes/Object/Type/", y 
+
+	seleccionar la opción de interpolación "Bezier"
+
+
+
+
+	-----------------------------------------------------------------------------------------------
+
+
+
+	Handles:
+	________
+
+
+	
+	_ahora debemos crear las splines, que harán de handles, tanto del chest, ó torax, como del hip,
+
+	ó cadena
+
+
+	_estas splines las debemos ubicar tanto en la sección del bone del coxis, ó "Spine Lumbar bn",
+
+	y "Spine Chest_3 bn", por ejemplo
+
+
+	_estas explines, le debemos hacer "free transformations", así, como de asignarle un color 
+
+	respectivo
+
+
+	_más también, debemos renombrarlas ej "Handle Hip", y "Handle Chest"
+
+
+	
+	-----------------------------------------------------------------------------------------------
+
+
+
+	IK Spline:
+	__________
+
+
+	
+	_ahora debemos seleccionar el bone, base de la spine, ó columna vertebral, el bone que corresponde
+
+	al hip, ó cadera, este es "Spine_Lumbar bn"
+
+
+	_luego con el bone "Spine_Lumbar bn", seleccionado vamos ha "Tags/Character Tags/Ik-Splines"
+
+
+	_así, será agregado el tag "IK-Spline", al bone, "Spine_Lumbar bn"
+
+
+	
+	Setting:
+	________
+
+
+	_ahora seleccionamos el tag, "IK-Spline", que hemos creado y vamos a sus attributes
+
+
+	_ahora en "IK-Spline/Tag/Spline", debemos arrastrar el elemento spline, que hemos agregado
+
+	y simplificado, en este caso la hemos renombrado como "Spine_Dorsal"
+
+
+	_y en "IK-Spline/Tag/End", debemos arrastrar el efector de la cadena que corresponde a la
+
+	spine, ó columna vertebral, en este caso la hemos renombrado como "Spine Eff bn"
+
+
+	_y en "IK-Spline/Tag/Twist/", debemos seleccionar la opción de "Object", así, el handle,
+
+	controlador del chest, al rotar éste rotará también, el sistema espinal
+
+
+	_más en la sección de handles en "IK-Spline/Handles/", disponemos de un botón "Add", para
+
+	con éste agregar cuando "handles", desiemos para controlar la "Spine", ó columna dorsal,
+
+	en este caso utilizaremos dos handles, los cuales se diferencian por índices
+
+
+	_así. el handle, con el "Index: 0", corresponde al handle inferior ó del hip, ó cadera, por
+
+	ende arrastraremos a su sección de "Object", el handle, que hemos creado para tal función,
+
+	en este caso arrastraremos el handle, que hemos llamado "Handle Hip"
+
+
+	_así. el handle, con el "Index: 1", corresponde al handle superior ó del chest, ó torax, por
+
+	ende arrastraremos a su sección de "Object", el handle, que hemos creado para tal función,
+
+	en este caso arrastraremos el handle, que hemos llamado "Handle Chest"
+
+
+	_así, podremos ver que ahora al mover los handles, que hemos configurado éstos ahora mueven
+
+	todo el sistema espinal de forma dinámica e interactiva
+
+
+
+
+

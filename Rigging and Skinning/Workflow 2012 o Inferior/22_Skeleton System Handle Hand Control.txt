@@ -1,0 +1,232 @@
+
+
+
+Riggings in Cinema 4D (mi version C4D-R12)
+
+
+	digital tutors - character rigging in cinema 4d
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+Skeleton System Bípedo Kinematics Workflow:
+
+
+
+Note:	workflow, de la creación de character, bípendo de la mano de la gente DigitalTutors, para Cinema 4D 
+
+	del curso "digital tutors - character rigging in cinema 4d"
+
+
+
+Rename:	las diferentes chains, ó cadenas es altamente recomendable renombrarlas con nombres característicos
+
+	los cuales nos permiten reconocer éstas rápidamente y, sobre todo las el proceso de emparentamiento
+
+	manual el cuál, es parte fundamental de proceso de rigging
+
+
+-----------------------------------------------------------------------------------------------------------
+
+
+
+	Skeleton System Shoulder Handle Control:
+	________________________________________
+
+
+	-----------------------------------------------------------------------------------------------
+
+
+
+	Spline:
+	_______
+
+
+	_primero debemos crear un spline, la cuál, hará de handle, controlador del sistema del arm ó
+
+	brazo y mano ó hand
+
+
+	_luego debemos colocar éste sobre la altura de la mano
+
+
+
+	Pivot:
+	______
+
+	_luego debemos color su pivot, en el bone, correspondiente al carpo, de ma muñeca de la mano, en este 
+
+	es el bone, 'o root "L_Meta Carpo bn"
+
+
+
+	Free Transformation:
+	____________________
+
+	_luego debemos hacer free transformation, de la posición y propiedades de ésta nueva spline,
+
+	que hemos creado
+
+
+	Color:
+	______
+
+	_también, es recomendable asignarle un color característica ha esta spline
+
+
+
+	Rename:
+	_______
+
+	_así, como renombrar ésta ej: "L_Handle hand"
+
+
+
+	-----------------------------------------------------------------------------------------------
+
+
+
+	Parent:
+	_______
+
+
+	_en este caso, el emparentamiento será secundario ya que éste será una reacción colateral al movimiento
+
+	realizado por los kinemática inversa del brazo a través, de su controlador "IK"
+
+
+	_para esto, primero seleccionamos el bone, correspondiente al brazo ó arm, ó humero, luego con éste 
+
+	seleccionamos vamos al explorer/Tags/Characters Tags/IK
+
+
+	_luego seleccionamos el tag, IK, creado para entrar en sus opciones de configuración y vamos ha: 
+
+
+	IK/Tag/Tag Properties:
+	______________________
+
+
+	_End:
+
+		_en esta sección debemos arrastrar el bone, correspondiente a la muñeca ó hand, en este caso
+
+		es el bone, "L_Meta Carpo bn", (no arrastrar el efector de la cadena del arm, ó lo que es lo
+
+		mismo el bone correspondiente el meta carpo de la mano)
+
+
+	_Goal:
+
+		_en esta sección debemos arrastrar el bone, correspondiente al handle, que controlará a la mano
+
+		ó hand, en este caso es "Handle Hand", y, a continuación debemos darle al botón 
+
+		"Add Goal", para que así, este nos cree un elemento "Null Object", en este caso será el
+
+		"L_Meta Carpo bn.Goal", con el cuál, controlar el brazo ó arm
+
+
+
+	-----------------------------------------------------------------------------------------------
+
+
+	_luego podremos arrastrar el "L_Handle Hand", dentro de estructura de "L_Arm Root"
+
+
+	_y por último, debemos arrastrar el controlador "L_Meta Carpo bn.Goal", dentro del "L_Handle Hand"
+
+
+	así, éste controlará la mano y el brazo en su conjunto y, a su vez. éste penderá el sistema del
+
+	espona dorsal ó columna vertebral como también, del sistema general
+
+	
+
+	-----------------------------------------------------------------------------------------------
+
+
+
+	Orientation:
+	____________
+
+
+	_para ésto, seleccionamos primero el bone, de la muñeca ó carpo-meta carpo, en este caso es el bone,
+
+	"L_Meta Carpo bn", luego seleccionamos el handle, de la mano ó hand, en este caso es "L_Handle Hand",
+
+	así, con ambos seleccionados vamos y aplicamos "Character/Constrints/Add Rotation Constraint"
+
+
+	_en este punto, si las cordenadas de ambos elementos seleccionados en el paso anterior eran diferentes 
+
+	entre sí, es posible que la mano ó hand, en este caso esté virada 90, grados en uno de los lados
+
+
+	_para corregir este desface, podemos seleccionar la etique de contraint, que se ha agregado el bone,
+
+	"L_Meta Carpo bn", en el paso ó proceso anterior e ir a las opciones de:
+
+	"L_Meta Carpo bn/Constraint-Tag/PSR/Offset/", y seleccionar la cordernada de rotación de interés ha
+
+	corregir, en este caso es la cordenada de rotación "X", la cuál, rotaremos -105, grados para así,
+
+	corregir el desface u offset
+
+
+	_más también, es posible que haya que corregir elgunos desfaces leves de algunos bones, ó huesos de la
+
+	mano y brazo, ésto lo podemos hacer de forma manual
+
+
+	_de esta manera podremos que ahora ya podremos controlar la mano y brazo a través, del handle, de la 
+
+	mano tanto en su posición como en la rotación de la mano
+
+
+
+
+
+
+
+
+
+
+	_ahora debemos configurar la orientación ó rotación de la mano ó hand, a través, del handle, control
+
+	de la mano
+
+
+	_para esto, primero crearemos un elemento "Null Object", así, vamos ha "Object/Null"
+
+
+	_éste null, que hemos creado debemos colocar en la posición de la articulación ó joint, de la muñeca
+
+	ó mano ó hand para éste articule la mano
+
+
+	_este null object, lo podemos renombrar ej: "L_Handle Hand Pivot"
+
+
+	Constraint PSR:
+	_______________
+
+
+	_para ésto, primero seleccionamos el "L_Handle Hand Pivot", luego seleccionamos el bone, de la muñeca
+
+	correspondiente al meta carpo de la mano, y, con ambos seleccionados vamos y aplicamos: 
+
+	"Character/Constraints/Add PSR Constraint"
+
+
+	_así, se agregará el tag "Constraint PSR", el null object, que creamos ""L_Handle Hand Pivot""
+
+
+
+
+
+
+	

@@ -1,0 +1,54 @@
+
+
+
+
+Tutorial Cinema 4d Bodypaint 3d Básico a Avanzado parte 3 by Zigurat Tutoriales
+
+	https://www.youtube.com/watch?v=kRCvIcjcYyo
+
+
+
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+General:
+________
+
+	_primero debemos de tener nuevo motivo editable y con el proceso uvmap, aplicado
+
+
+	_para leugo aplicarle un material a el motivo en caso de que éste no disponga ya de uno, más ha éste material debemos de
+
+	crearle al menos una nueva textura en el canal "Color", para que así, el proceso de pintura sea volcado sobre ésta nueva
+
+	textura
+
+
+	_para luego ir al modo de "BP UV Edit", para luego ir la sección de "Materials", y en la sección canales, relacionar el 
+
+	canal "C", de color con el material y la textura respectiva dándole ha la "X", y se cree una nueva layer, en el panel layers,
+
+	para que así, podamos comenzar con el proceso de bodypaint, manuel mente
+
+
+
+Txture Pinting:
+_______________
+
+	_también, tenemos la posibilidad de pintar con texturas a través, del pincel directamente en el viewport, 3d, ésta opción es 
+
+	especialmente útil para pintar con patterns, de muestras de texturas ó módulos y super módulos
+
+
+	_así, estando en el modo de "DP UV Edit", podemos ir a las opciones de "Color/Colors", y allí ubicamos la opción de 
+
+	"Texture Paint", y en sus opciones podemos cargar una imágen de nuestro disco duro con la cuál, podremos pintar sobre el motivo
+
+	a través, del pincel
+
+
+
+
+

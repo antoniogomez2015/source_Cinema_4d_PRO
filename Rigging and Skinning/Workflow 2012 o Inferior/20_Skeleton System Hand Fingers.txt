@@ -1,0 +1,171 @@
+
+
+
+Riggings in Cinema 4D (mi version C4D-R12)
+
+
+	digital tutors - character rigging in cinema 4d
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+Skeleton System Bípedo Kinematics Workflow:
+
+
+
+Note:	workflow, de la creación de character, bípendo de la mano de la gente DigitalTutors, para Cinema 4D 
+
+	del curso "digital tutors - character rigging in cinema 4d"
+
+
+
+Rename:	las diferentes chains, ó cadenas es altamente recomendable renombrarlas con nombres característicos
+
+	los cuales nos permiten reconocer éstas rápidamente y, sobre todo las el proceso de emparentamiento
+
+	manual el cuál, es parte fundamental de proceso de rigging
+
+
+-----------------------------------------------------------------------------------------------------------
+
+
+
+	Skeleton System Hand Fingers:
+	_____________________________
+
+
+
+	-----------------------------------------------------------------------------------------------
+
+
+
+	Skeleton/Fingers:
+	_________________
+
+
+	_primero debemos crear las cadenas respectivas a la cantidad de dedos ó fingers, del character,
+
+	en este caso haremos un character, bípedo de un humano masculino con cinco dedos
+
+
+	_para ésto, debemos hacer una cadena ó chain, para cada dedo respectivamente
+
+
+	_ahora renombramos la cadena teniendo ésta la siguiente nomenclatura y estructura:
+
+
+	
+		_L_Hand Thumb Finger Root
+
+			_L_Hand Thumb Finger 1 bn
+
+				_L_Hand Thumb Finger 2 bn
+
+					_L_Hand Thumb Finger 3 bn
+
+						_L_Hand Thumb Eff bn
+
+
+
+		_L_Hand Index Finger Root
+
+			_L_Hand Index Finger 1 bn
+
+				_L_Hand Index Finger 2 bn
+
+					_L_Hand Index Finger 3 bn
+
+						_L_Hand Index Eff bn
+
+
+
+		_L_Hand Midle Finger Root
+
+			_L_Hand Midle Finger 1 bn
+
+				_L_Hand Midle Finger 2 bn
+
+					_L_Hand Midle Finger 3 bn
+
+						_L_Hand Midle Eff bn
+
+
+
+
+		_L_Hand Ring Finger Root
+
+			_L_Hand Ring Finger 1 bn
+
+				_L_Hand Ring Finger 2 bn
+
+					_L_Hand Ring Finger 3 bn
+
+						_L_Hand Ring Eff bn
+
+
+
+
+		_L_Hand Pinky Finger Root
+
+			_L_Hand Pinky Finger 1 bn
+
+				_L_Hand Pinky Finger 2 bn
+
+					_L_Hand Pinky Finger 3 bn
+
+						_L_Hand Pinky Eff bn
+
+
+
+
+
+	-----------------------------------------------------------------------------------------------
+
+
+
+	Parent:
+	_______
+
+
+	_ahora debemos emparentar las cadenas que hemos creado para los dedos ó fingers, con el sistema
+
+	del brazo ó arm, y el sistema general
+
+
+	_para ésto, arrastramos la cadena de los dedos ó fingers, en este caso:
+
+
+		_"L_Hand Thumb Finger Root", 
+
+		_"L_Hand Index Finger Root",
+
+		_"L_Hand Midle Finger Root",
+
+		_"L_Hand Ring Finger Root",
+
+		_"L_Hand Pinky Finger Root"
+
+
+
+	dentro del bone, correspondiente al meta carpo del brazo ó arm, en este caso e, bone, 
+
+	"L_Meta Capo bn", más no el efector del brazo ó arm
+
+
+	_así, podremos ver al mover el shoulder system, arm ó el sistema general tmabién, se moverá el 
+
+	sistema de brazon ó arm, hand, y fingers al unísono
+
+
+	
+
+
+
+
+
+
+
+

@@ -1,0 +1,76 @@
+
+
+
+Riggings in Cinema 4D (mi version C4D-R12)
+
+
+	digital tutors - character rigging in cinema 4d
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+Skeleton System Bípedo Kinematics Workflow:
+
+
+
+Note:	workflow, de la creación de character, bípendo de la mano de la gente DigitalTutors, para Cinema 4D 
+
+	del curso "digital tutors - character rigging in cinema 4d"
+
+
+
+Rename:	las diferentes chains, ó cadenas es altamente recomendable renombrarlas con nombres característicos
+
+	los cuales nos permiten reconocer éstas rápidamente y, sobre todo las el proceso de emparentamiento
+
+	manual el cuál, es parte fundamental de proceso de rigging
+
+
+-----------------------------------------------------------------------------------------------------------
+
+
+
+	Skeleton System Mirror Arm:
+	___________________________
+
+
+	-----------------------------------------------------------------------------------------------
+
+
+
+	Mirrow:
+	_______
+
+
+	_primero tenemos que sercionarnos que todos los elementos y los handles, tienen la nomenclatura ó prefijos 
+
+	correctos en este caso "L_",
+
+
+	_primero tenemos que seleccionar todos los elementos ha duplicar por simetría en este caso es recomendable
+
+	seleccionar el handle, del hombro ó shoulder, con "Mouse Midle Click", para así seleccionar toda la cadena
+
+	ó chain
+
+
+	_luego de tener todos los elementos deseados seleccionados vamos ha "Character/Mirrow Tool"
+
+
+	_en las opciones de "Mirror Tool/Naming/Replace", debemos indicar los valores actuales y los vaores
+
+	ha reemplazar, en este caso serían "L_/R_"
+
+
+	_es posible que el proceso de duplicación por simetría "Mirrow", algunos elementos con constraint puden 
+
+	duplicarse de forma virada de algunos handles, para éstos casos hay que aplicar las opciones de offset
+
+	para reajustar a la posición correcta
+
+
+
+	

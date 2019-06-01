@@ -1,0 +1,87 @@
+
+
+
+Riggings in Cinema 4D (mi version C4D-R12)
+
+
+	digital tutors - character rigging in cinema 4d
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+Skeleton System Bípedo Kinematics Workflow:
+
+
+
+Note:	workflow, de la creación de character, bípendo de la mano de la gente DigitalTutors, para Cinema 4D 
+
+	del curso "digital tutors - character rigging in cinema 4d"
+
+
+
+Rename:	las diferentes chains, ó cadenas es altamente recomendable renombrarlas con nombres característicos
+
+	los cuales nos permiten reconocer éstas rápidamente y, sobre todo las el proceso de emparentamiento
+
+	manual el cuál, es parte fundamental de proceso de rigging
+
+
+-----------------------------------------------------------------------------------------------------------
+
+
+
+	Scene Frames Cycles:
+	____________________
+
+
+
+	-----------------------------------------------------------------------------------------------
+
+
+
+	Hip Horizontal Balance:
+	_______________________
+
+
+	
+
+	_este proceso nos permitirá asimilar el proceso que hace el cuerpo para balancear el 
+
+	peso y el movimiento del cuerpo, para esto, el cuerpo proyecta la base del torso ó cadera
+
+	hacia afuera del centro ó eje central del cuerpo al asentar en el suelo la pierna que va 
+
+	hacia adelante
+
+
+	_para ésto, vamos al "frame 5", que es donde asienta el primer pie sobre el floor, ó piso
+
+
+	_luego seleccionamos el handle hip, y procedemos ha desplazardo un poco horizontalmente 
+
+	hacia afuera del character
+
+
+	_luego hacermo el movimiento opuesto del handle hip, ó cadena al asentar el otro pie cuando
+
+	éste esté hacia adelante, ésto sucede en el "frame 21"
+
+
+	_más ahora para lograr un movimiento más real podremos ir el F_Curve Editor, y seleccionar
+
+	el "Handle Hip/P_X", y ver su curva de animación que hemos realizado en el frame 5, y 21,
+
+	y podremos ver un curva senoidal donde una irá hacia arriba y otra irá hacia abajo y 
+
+	keyframe, intermedios entre éstas
+
+
+	_más si eliminamos éstos keyframes, entre ambas curvas senoidales de animación lograremos
+
+	una interlación más real entre ambas curvas senoidales conviertiéndolas en una sola curva
+
+	continuado y con un cinemática más real
+

@@ -1,0 +1,109 @@
+
+
+
+Riggings in Cinema 4D (mi version C4D-R12)
+
+
+	digital tutors - character rigging in cinema 4d
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+Skeleton System Bípedo Kinematics Workflow:
+
+
+
+Note:	workflow, de la creación de character, bípendo de la mano de la gente DigitalTutors, para Cinema 4D 
+
+	del curso "digital tutors - character rigging in cinema 4d"
+
+
+
+Rename:	las diferentes chains, ó cadenas es altamente recomendable renombrarlas con nombres característicos
+
+	los cuales nos permiten reconocer éstas rápidamente y, sobre todo las el proceso de emparentamiento
+
+	manual el cuál, es parte fundamental de proceso de rigging
+
+
+-----------------------------------------------------------------------------------------------------------
+
+
+
+	Normalize Weight and Mirrow Weight:
+	___________________________________
+
+
+	-----------------------------------------------------------------------------------------------
+
+	
+
+	Normalize Weight:
+	_________________
+
+
+	_para esto, seleccionamos la mesh, del character set, y vamos ha "Character/Manager/Weight Manager"
+
+
+	_luego podremos ir a las opciones de "Weight Manager/Weight", en la cuál, podremos seleccionar el 
+
+	bone, de trabajo así, como también, los vertex, de forma independiente y graduar su influencias por
+
+	grupos de éstos elementos seleccionados, esto nos permite una edición más detallada
+
+
+	_más también, podemos "Nomalize", un grupo de elementos seleccionados a un valor determinado por 
+
+	nosotros
+
+
+	-----------------------------------------------------------------------------------------------
+
+
+	
+
+	Single Mirrow:
+	______________
+
+
+	_para esto, seleccionamos la mesh, del character set, y vamos ha "Character/Manager/Weight Manager"
+
+
+	_luego vamos a las opciones de "Weight Manager/Joint/Functions/", en la cuál, tendremos las opciones
+
+	de "Copy", la cuál, nos permite copiar el "Weight", del bone, seleccionado y la opción de "Replace",
+
+	la cuál, nos permite pegar ó reemplazar en el bone, opuesto, ej; del "LArm,", al "R_Arm", permitiendonos
+
+	también, seleccionar la cordenada de duplicado por simetría, otros, esta opción es especialmente útil
+
+	para hacer duplicados por simetría selectivos del weight map
+
+
+
+
+	-----------------------------------------------------------------------------------------------
+
+
+	
+
+	Auto Mirrow:
+	____________
+
+
+	_para esto, seleccionamos la mesh, del character set, y vamos ha "Character/Manager/Weight Manager"
+
+
+	_luego vamos a las opciones de "Weight Manager/Joint/Functions/", en la cuál, tendremos la opción de
+
+	"Auto Mirrow", la cuál, nos permite hacer un duplicado por simetría de todo weight map, a la vez, de
+
+	un lado al otro de forma inmediata y muy práctica, esta es la opción más recomendada para la mayoría
+
+	de los casos
+
+
+

@@ -1,0 +1,49 @@
+
+Tutorial: Plexus Particle Stream Tutorial:  https://www.youtube.com/watch?v=qVQAOVHgTPU&list=TL4itYM_01Y4Si4Vu2LeJ6O5GXCE8OH2Ya
+
+	
+	NOTA: podemos realizar composiciones donde generemos y animemos geometría la cuál la podemos exportar en obj, ha "After Effets",
+	pero también podemos exportar composiciones ha After Effects y "Nulls", con las trayectorias de animación para luego en AF, hacer 
+	seguimiento y continuación de esas trayectorias
+
+
+	1_creamos la ceometria y la animamos
+
+		1.1_creamos un "Spline", con la forma, ubicación y recorrido deseado
+
+		1.2_ creamos un forma sugeriada la será extruida a través del spline creado anteriormente
+		
+		1.3_ahora extruimos a través de un "Sweep NURBS"
+
+	2_ahora creamos un "Null", object, y le asignamos una etiqueta yendo ha "Null/Tags/CINEMA 4D Tags/Aline To Spline"
+
+		2.1_en la tag "Aline To Spline", en sus propiedades de "Spline path", arrastramos el trayecto deseado, arrastrando la spline deseada que realizará el recorrido deseado
+
+		2.2_en la tag "Aline To Spline", en sus propiedades "Position", debemos animar el recorrido de la trayectoria desde el primer fotograma en 0%, hasta el último fotograma yendo hasta 100%
+
+	3_luego seleccionarmos la geometría que deseamos exportar y vamos ha "File/Export/Warefrom(OBJ)"
+
+	4_creamos una cámara para su uso de referencia en After Effects
+
+	5_ahora seleccionamos el "Null Object", que creamos con la animación de la trajectoria del spline y abrimos un timeline nuevo
+
+		5.1_con el "Null Object", seleccionado vamos ha "Funtions/Bake Objects", y le damos "OK"
+
+		5.2_así, se creará otro Null Object, ó se creará otra tag "Align To Spline", el null object, existente, de ser así, eliminamos la tag, que no contenga los fotogramas de animación generados
+
+		5.3_por último, el Null Object, le asignamos un etiqueta de composición externa, yendo ha "Null Object/Tags/CINEMA 4D Tags/External Compositiong", para que así, este elemento de tipo "Null Object", sea considerado a la hora de la exportación
+
+	6_ahora vamos ha render setting en cinema 4d y, ajustamos el output, ajustando el formado y tamaño de salida del proyecto
+
+	7_ahora vamos ha render setting en cinema 4d y, en "output/Frame Range", indicamos "All Frames", ó "Manual", para asignar la duración de la animación ha exportar
+
+	8_ahora vamos ha render setting en cinema 4d y, configuramos la ruta y el formato de salida si es preciso
+
+	9_ahora vamos ha render setting en cinema 4d y, activamos "Compositing Proyect File", para exportar el proyecto ha After Effects, e incluimos "Compositing Proyect File/Save", e "Compositing Proyect File/Include 3D Data"
+
+	10_por último en "Compositing Proyect File", le damos "Save Proyect Data", para así, exportar el proyecto directamente ha After Effects
+
+	11_ahora vamos ha After Effects, e importamos el proyecto exportado des Cinema 4D
+
+
+

@@ -1,0 +1,100 @@
+
+
+
+
+Tutorial Cinema 4d Bodypaint 3d Básico a Avanzado parte 3 by Zigurat Tutoriales
+
+	https://www.youtube.com/watch?v=kRCvIcjcYyo
+
+
+
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+General:
+________
+
+	_primero debemos de tener nuevo motivo editable y con el proceso uvmap, aplicado
+
+
+	_para leugo aplicarle un material a el motivo en caso de que éste no disponga ya de uno, más ha éste material debemos de
+
+	crearle al menos una nueva textura en el canal "Color", para que así, el proceso de pintura sea volcado sobre ésta nueva
+
+	textura
+
+
+	_para luego ir al modo de "BP UV Edit", para luego ir la sección de "Materials", y en la sección canales, relacionar el 
+
+	canal "C", de color con el material y la textura respectiva dándole ha la "X", y se cree una nueva layer, en el panel layers,
+
+	para que así, podamos comenzar con el proceso de bodypaint, manuel mente
+
+
+
+Load Textures:
+______________
+
+	_y para cargar una nueva textura dentro del panel uvmap, debemos estar en el modo "BP UV Edit", e ir al panel "layers", y 
+
+	allí, hacer mouse right click, sobre la layer, base de fondo ó "Background", y seleccionar la opción de 
+
+	"Mouse Right CLick/Texture/Marge Texture.."
+
+
+	_para que así, se nos abra el explorador en el cuál, podremos escoger una textura la cuál, deseamos proyectar sobre los uvs,
+
+	del motivo, es recomendable previamente editar el tamaño de la textura para que ésta coincida con las dimensiones del canvas
+
+	del uvmap editor, por que de lo contrario al cargar una nueva textura nos saldrá una ventana modal en la cuál, nos pedirá que
+
+	redimensionemos la textura, aunque ésta última opción no es prelativa
+
+
+	_de ésta manera, ser cargará el uvmap editor, la nueva respectiva textura más en el panel layers, será agregada una nueva layer,
+
+	justo por encima de la layer, sobe cuál, hicimos mouse right click
+
+
+
+Edit Texrure:
+_____________
+
+	_luego de que hemos cargado una nueva textura podemos editar ésta para que así, ésta coincida con las proyecciones uvs, de ésta
+
+	manera, podremos utilizar herramientas como la varita mágica para eliminar el fondo blanco de la imágen por ejemplo entre otroas
+
+	posibilidades
+
+
+	_para luego hacer uso de la herramienta de "Transform Bitmap", del panel de herramientas de la izquierda del panel "BP UV Edit", 
+
+	al igual que la varita mágica entre otras herramientas
+
+
+	_de ésta manera, debemos ir al panel layers, y seleccionar la layer, respectiva de la textura y con ésta seleccionada ir al panel
+
+	de herramientas y seleccionar la herramienta transform bitmap, y luego ir al panel uvmap editor en el cuál, ahora podremos hacer
+
+	transformaciones sobre la textura que hemos cargado
+
+
+	_así, si nos posamos dentro del área de la imágen podremos mover ésta, más si nos posicionamos en una de las esquinas el ícono 
+
+	cambiará indicándonos que también, podremos rotar la imágen así, como escalarla, de ésta manera, podremos ajustar la imágen los 
+
+	más posible sobre nuetro motivo, a través, de ajustes y deformaciones sobre la proyección de uvs, respectiva
+
+
+	_y para aumenta aún más las posibilidad de producción, podemos incorporar ha éste proceso la herramienta de clonación "Clone Tool",
+
+	a través, de la cuál, podremos hacer terminaciones, empates entre imágenes y el fondo, fundidos de textura y color para que hagamos
+
+	los remates y acados en la composiciones del mapeo de texturas sobre las proyecciones uvs
+
+
+	_y una de las ventajas de la herramienta de clone tools, es que ésta nos permite pintar directamente en el viewport, 3d
+
+

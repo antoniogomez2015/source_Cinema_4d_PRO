@@ -1,0 +1,28 @@
+
+exportar secuencas OBJ y utilizarlas en Plexus, en After Effects
+
+	NOTA: se debe hacer instalado previamente el plugins "Plexus OBJ Secuence"
+
+
+	1_animamos el objecto de tipo geometría poligonal
+
+	2_vamos a las opciones de "Render Setting/Output", e indicamos unas dimensiones de salida y un aspecto
+
+	3_vamos a las opciones de "Render Setting/Output", y en "Frame Range", indicamos "All Frames", ó "Manual", para indicar un rango de animación determinado
+
+	4_con el objeto poligonal seleccionado ha exportar vamor ha "File/Export/Plexus OBJ Secuence", indicamos una ruta de exporatación y le damos guardar, así, 
+	se generará la secuena de animación a través de una secuencia de archivos de tipo OBJ
+
+	5_ahora en After Effects, creamos un objecto nulo, y lo llamos pro ejemplo: Plexus
+
+	6_ha este nulo le cargamos el efecto "Effects/Rowbyte/Plexus"
+
+	7_en las opciones de Plexus "ToolKit/Add Geometry", seleccionamos "OBJ"
+
+	8_ahora en las opciones creadas "Plexus OBJ Object/Import OBJ", seleccionamos la secuencia OBJ, exportada desde C4D
+
+		8.1_en las opciones de "Plexus OBJ Object/Transform OBJ/OBJ Location", colocamos todas sus cordenadas XYZ, en "0", y por lo general habrá que invertir la cordenada "Y",
+		para que así, la secuencia tome el mismo sentido que tenia en C4D
+
+	9_en las opciones de "Plexus OBJ Object/Add Render", seleccionamos "Lines", para complementar el render point, para que así podamos ver mejor la forma de la geometría de la secuencia
+	para esto debemos ajustar los parámetros tanto de render point, como de lines

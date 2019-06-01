@@ -1,0 +1,135 @@
+
+
+
+Body Paint Cinema 4D
+
+	TUTORIAL CINEMA 4D - BODYPAINT BASICO
+		https://www.youtube.com/watch?v=Cbxo1RRabPE
+
+	
+	MODELA Y TEXTURIZA EN BODY PAINT UN PANTALON VAQUERO
+		https://www.youtube.com/watch?v=_PS9T1VTElw
+
+
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+General:
+________
+
+
+	_primero debemos de tener creado nuestro motivo, éste debe ser un objeto editable para que así, éste tenga una etiqueta ó
+
+	tag de UVW, y Normal
+
+
+	_así, como también, éste motivo debe de tener aplicado previamente el proceso de uvmap, para que así, la textura generada 
+
+	pueda proyectarse de forma correcta y ordenada sobre la mesh, proyectada
+
+
+	_así, como también, el motivo de de tener el proceso de bodypaint, activa sea de la forma wizard, ó la forma manual, y es
+
+	recomendable también, estar en alguno de los modos "DP 3D Paint", ó "DP UV Edit", para que así, dispongamos de todas las 
+
+	herramientas a la vista
+
+
+
+Barra de herramientas ó tools:
+______________________________
+
+
+	Select:
+
+	_primero disponemos de un bloque de herramientas ha modo de edición de por medio de selección, totalmente similar ha 
+
+	photoshop así, podremos hacer selecciones en la vista 3d, ó en el uvmap, de la textura existente ó que hayamos pintado, 
+
+	de ésta manera podremos hacer marcos para pintar dentro de ellos de forma ordenada como también, podremos mover bloques
+
+
+	
+	_para lo cuál, dispodremos de herramientas de selección rectangulares, circulares y de tipo lazo
+
+
+
+	Move Layer:
+	
+	_ésta es la primera herramienta del panel y ésta nos permite mover selecciones realizadas previamente de pintura ha otro 
+
+	sitio igual que en photoshop
+
+
+
+	Magic Wand:
+
+		_así, como también, dispondremos de dos varitas mágicas a través, de las cuales podremos hacer también, selecciones 
+
+		libres de puntura y texturas aplicadas sobre el motivo directamente el viewport, 3d, en el uvmap editor
+
+		
+		_ésta herramienta la podemos configurar y graduar el umbral de tolerancia al igual que en photoshop
+
+
+
+	Transform Bitmap:
+
+		_ésta herramienta nos permite mover bloques de selecciones realizadas, pero directamente en el panel uvmap editor,
+
+		así, para utilizar ésta herramienta debe de haber previamente creada una selección para luego poder mover ésta 
+
+		seleccionar en el panel uvmap editor a través, de la herramienta transform bitmap
+
+
+
+	Brush/Colorize Tool:
+
+		_así, como también, dispondremos de las herraminetas fundamentales de pinceles a través, de los cuales podremos 
+
+		aplicar los diferentes procesos de puntura y texturizado
+
+
+
+	Clone Tool:
+
+		_ésta herramienta nos permite clonar de igual manera que en photoshop, así, podremos tomar un muestras de color de 
+
+		alguna parte del motivo y continuar pintando a partir de la muestra de color tomada previamente
+
+
+		_así, al seleccionar la herramienta clone tool, nos aparecerá un cuenta gotas a través, del cuál, podremos tomar la
+
+		muestra de color ó textura ha clonar
+
+
+		_y si deseamos volver ha tomar otra muestra debemos de seleccioanr el ícono de la herramienta nuevamente para que 
+
+		así, nos aparesca nuevamente el cuenta gotas
+
+
+
+	Eraser:
+
+		_ésta herramienta nos permite borrar ó aplicar otro color sobre los existentes así, podemos seleccioanr un color
+
+		base ha aplicar sobre los anteriores, e igualmente modremos configurar ésta herramienta como su tamaño densidad, 
+
+		otros
+
+
+
+	Gradient Tool:
+
+		_
+
+		
+
+
+
+
+
+
+	

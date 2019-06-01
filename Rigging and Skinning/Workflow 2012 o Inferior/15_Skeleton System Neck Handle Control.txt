@@ -1,0 +1,86 @@
+
+
+
+Riggings in Cinema 4D (mi version C4D-R12)
+
+
+	digital tutors - character rigging in cinema 4d
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+Skeleton System Bípedo Kinematics Workflow:
+
+
+
+Note:	workflow, de la creación de character, bípendo de la mano de la gente DigitalTutors, para Cinema 4D 
+
+	del curso "digital tutors - character rigging in cinema 4d"
+
+
+
+Rename:	las diferentes chains, ó cadenas es altamente recomendable renombrarlas con nombres característicos
+
+	los cuales nos permiten reconocer éstas rápidamente y, sobre todo las el proceso de emparentamiento
+
+	manual el cuál, es parte fundamental de proceso de rigging
+
+
+-----------------------------------------------------------------------------------------------------------
+
+
+
+	Skeleton System Neck Handle Control:
+	____________________________________
+
+
+
+	-----------------------------------------------------------------------------------------------
+
+
+
+	Spline:
+	_______
+
+
+	_primero debemos crear un spline, la cuál, hará de handle, controlador del sistema del cuello
+	
+
+	_luego debemos colocar éste ej, detras del cuello a un distancia prudente
+
+
+
+	Pivot:
+	______
+
+	_luego debemos color su pivot, en la base del cuello ó base ó efector de la espina dorsal
+
+
+
+	Free Transformation:
+	____________________
+
+	_luego debemos hacer free transformation, de la posición y propiedades de ésta nueva spline,
+
+	que hemos creado
+
+
+
+	Color:
+	______
+
+	_también, es recomendable asignarle un color característica ha esta spline
+
+
+
+	Rename:
+	_______
+
+	_así, como renombrar ésta ej: "Handle Neck"
+
+
+
+	

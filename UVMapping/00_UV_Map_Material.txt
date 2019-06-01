@@ -1,0 +1,19 @@
+
+
+UvMapping proceso general
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+	Material:
+	_________
+
+	_primeramente el motivo ó character, al cuál, deseamos crearle el proceso uvmap, debemos aplicarle un material
+
+	base previamente
+
+
+	_a partir del cuál, se podrán realizar todos los procesos posteriores de uvs, y texturización, otros
+

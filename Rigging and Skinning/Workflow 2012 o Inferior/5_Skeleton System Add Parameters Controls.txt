@@ -1,0 +1,162 @@
+
+
+
+Riggings in Cinema 4D (mi version C4D-R12)
+
+
+	digital tutors - character rigging in cinema 4d
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+Skeleton System Bípedo Kinematics Workflow:
+
+
+
+Note:	workflow, de la creación de character, bípendo de la mano de la gente DigitalTutors, para Cinema 4D 
+
+	del curso "digital tutors - character rigging in cinema 4d"
+
+
+
+Rename:	las diferentes chains, ó cadenas es altamente recomendable renombrarlas con nombres característicos
+
+	los cuales nos permiten reconocer éstas rápidamente y, sobre todo las el proceso de emparentamiento
+
+	manual el cuál, es parte fundamental de proceso de rigging
+
+
+-----------------------------------------------------------------------------------------------------------
+
+
+
+	Add Parameters Controls:
+	________________________
+
+
+Note:	en este ejemplo agrgaremos un atributo de control al elelemento "L_Foot Handle Tobillo",
+
+	para a través, de éste podre controlar la posibilidad de poder evevar y bajar los dedos ó
+
+	fingers, del pie a través, del handle del pie por medio de un slider
+	
+
+
+
+	-----------------------------------------------------------------------------------------------
+
+
+
+	User Data:
+	__________
+
+
+	_primero debemos seleccionar el elemento al cuál, le asignaremos un nuevo atributo, en este
+
+	caso es el handle del pie "L_Foot Handle Tobillo"
+
+
+	_luego vamos al panel "Attributes/User Data", y seleccionamos la opción de "Add User Data.."
+
+
+	_ahora para crear un atributo con una pestaña independiente le damos ha "Add Group", este 
+
+	groups, se creará en grupo de pestañas por defecto ""User Data (Default), por esto es 
+
+	recomendable arrastrarlo fuera para que éste sea su propio groupo y tengas sus propias 
+
+	etiquetas
+
+
+	_ahora debemos arrastrar la "Data", que está en el "User Data Default", dentro del nuevo grupo
+
+	que hemos creado
+
+	
+	_este nuevo grupo que hemos creado es conveniente renombrarlo ej: "Ball Control", igualmente
+
+	debemos renombrar la data del grupo ej "Foot Control Ball"
+
+
+	_también, debemos ajustar los parámetro a nuestra medida:
+
+
+		_Step:
+
+			_colocamos este valor en "0.5%"
+
+
+		_Limit Min:
+
+			_desactivamos este valor
+
+
+		_Limit Max:
+
+			_desactivamos este valor
+
+
+
+
+	Setting Attributes:
+	___________________
+
+
+	_ahora bloqueamos la ventana de atributos con "L_Foot Handle Tobillo", seleccionado a través,
+
+	del candado de la ventana
+
+
+	_luego vamos a la sección "L_Foot Handle Tobillo/Ball Control", y hacemos "Mouse right click",
+
+	sobre atributo "Control Ball Foot", y seleccionamos la opción de "Animation/Set Driver", para
+
+	que éste sea el elemento manejador
+
+
+	_ahora duplicamos la ventana de atributos a través, del signo (+), de la ventana
+
+
+	_ahora en esta nueva ventana flotada seleccionamos en este caso el bone del meta tarso 
+
+	"L_Leg Fingers bn", así, en este caso debemos comprobar la cordenada de rotación del bone
+
+	del "ball", del pie que nos interesa, en este caso es la cordenada "X"
+
+
+	_así, podremos seleccionar el bone del meta tarso e ir ha "L_Leg Fingers bn/Coord/Rotation",
+
+	y seleccionar la cordenada de rotación deseada y hacer "Mouse right click", y seleccionar la
+
+	opción de "Animation/Set Driver(Relative)" así, éste hará de elemento manejado
+
+
+	_de esta manera podremos ver que al elemento "L_Leg Fingers bn", se le ha agregado una "Tag",
+
+	de "Expresso", la cuál, contene el proceso ha realizar con los nodos correspondientes
+
+
+	
+	-----------------------------------------------------------------------------------------------
+
+
+
+	Control:
+	________
+
+
+	_así, podremos que ahora si vamos al elemento al cuál, se agregamos el atributo, en este caso 
+
+	"L_Foot Handle Tobillo", y la sección "Ball Control", y movemos el valor de su atributo
+
+	"Control Ball Foot", ej: a un valor de "+-10", podremos ver como el "ball", del pie sube ó
+
+	baja respectivamente en el grado ó proporción que le indiquemos
+
+
+
+
+
