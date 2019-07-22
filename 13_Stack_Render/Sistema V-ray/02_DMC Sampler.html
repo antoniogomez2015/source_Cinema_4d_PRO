@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+</head>
+<body>
+<!--
+
+	mamecomdb
+
+		VRAY PARA CINEMA 4D DMC SAMPLER
+		https://www.youtube.com/watch?v=KS5rlDdtDCQ&index=2&list=PLXtVivrBaK3KNvPg4PV1fxXoWbilhJyKJ&hd=1
+
+
+
+
+-----------------------------------------------------------------------------------------------------------------------
+
+
+	OBSERVACIÓN:
+	
+	_Los valores de sub-divisiones que colocamos en los valores de todas las pestañas influyen en resultados de calidad del render final
+
+
+
+	DMC Sampler:
+	____________
+
+	_DMC Samples (Determinator Monte Carlo Rastreador), el DMC Sampler es un muestreador y es una variante del "Monte Carlo", del AR3,	también el DMC Sampler 
+
+
+	_puede considerarse como un controlador global de la calidad de la imágen ó render resultante 
+
+
+	_por que éste influye en todos los procesos de vray, influye en los desenfoques, profundidad de campo, reflexion, refraction, glosy, GI, 
+
+
+
+	Parámetro de DMC sampler:
+
+
+		Minimun Samples:
+		
+		_Antes de que empiece a utilizar todos los valores de sub división que hemos colocado en las diferentes pestañas primero tomará el valor que le hemos indicado en "Minimun Samples"		
+
+
+		Global Subdiv multiplier:
+
+		_Este es un mulplicador global, este multiplica si no queremos ir parte por parte; multiplica todas 
+
+		_las sub-divisiones de todas las pestañas si en una pestaña colocamos "8", sub divisiones 
+
+
+		_mientras que en "Global Subdiv multiplier:", colocamos un valor de "2" 
+		
+		_Vray, convertirá ó	multiplicará el valor de dicha sub división "8" 
+		
+		_del caso anterior por "2", que le indicamos, 
+		quedando estonces como sub división global "16"
+
+
+
+		Principios generales para resultados determinados:
+
+			
+		_Menor calidad, menor tiempo de render:
+
+			Aumentando "Adaptive amount"
+
+			Aumentando "Noise threshold"
+
+			Reduciento "Minimun samples"
+
+
+		Mayor calidad, mayor tiempo de render:
+
+
+			Reduciendo "Adaptive amount"
+
+			Reduciendo "Noise threshold"
+
+			Aumentando "Minimun samples"
+
+
+
+
+
+			
+
+ 
+
+
+
+
+
+
+
+
+
+		
+-->
+</body>
+</html>

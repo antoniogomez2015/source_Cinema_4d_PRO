@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+</head>
+<body>
+<!--
+	
+Unwrapping UVs in C4D R14 Part1
+
+	https://www.youtube.com/watch?v=jIhZ10TOLtI
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+	General:
+	________
+
+	_más para elemento, objetos ó characters, ó motivos más complejos tendremos la posibilidad de ir más allá de las posibilidades de las proyecciones a través, de algoritmos
+
+
+	_de ésta manera, podremos realizar proyecciones personalizadas bajo nuestros propios criterios e indicaciones
+
+	_así, podremos indicar los puntos de cotes, áreas de reserva en las cuales no se hará deformación y modificaciones entre otras posibilidades
+
+	
+	_ésta opción es especialmente útil para el proceso de uvs, de un character, ó personaje ó cualquier otro elemento complejo
+
+
+
+
+	Seams/Cut:
+	__________
+
+	_las marcar de corte ó seams, consisten en un signado a través, de una selección por medio de sub-elementos edges
+
+	_a través, de los cuales, el sistema realizará los cortes sobre el motivo ó character
+
+
+	_para lo cuál, debemos de seleccionar el motivo 
+	o character, y entrar en su modo de edición por edges 
+
+
+	_y para dicho proceso lo más recomendado es utilizar la herramienta de selección de tipo "Path Selection", 
+	
+	_para lo cuál, podremos acceder ha ésta yendo ha "Selection/Path Selection", ó a través, de su shortcut, "U + M"
+
+
+	_por medio de la cuál, podremos ir haciendo "mouse left click and drag", y más "shit", sostenido ir seleccionando las áreas de cortes deseada de forma práctca y rápida
+
+
+	_de ésta manera, debemos de dejar ésta selección activa en el modo de edición de sub-elementos edges
+
+
+	
+
+	Pin Points:
+	___________
+
+	_para a continuación ir al modo de edición de sub-elementos vertex, y allí, proceder ha seleccionar puntos estratégicos
+
+	_los cuales, no desamos que deformen como por ejemplo, los ojos, frente, orejas, mentón pómulos, otros
+
+
+	_de ésta maenra, podremos marcar éstas posiciones a través, de vertex, seleccionado por cada área respectiva por cada lado del character 
+	
+	_para que así, el sistema mantenga y respeta éstas areas y las someta a la menor distorsión posible
+
+
+	_de ésta manera, debemos de dejar ésta selección activa en el modo de edición de sub-elementos vertex
+
+
+
+	Polygons Selection:
+	___________________
+
+	_para por último seleccionar las areas de polígonos ha proyetar así, si es todo el character, debemos entonces seleccionar
+
+	_todos los "faces", del character, en el modo de edición de sub-elementos faces, más si deseamos extraer y proyectar sólo
+
+	un brazo seleccionaremos entonces sólo un brazo y así, suscesivamente
+
+
+	_de ésta manera, debemos de dejar ésta selección activa en el modo de edición de sub-elementos faces
+
+
+
+
+	Relax UV:
+	_________
+
+	_para luego, con todas las selecciones de todos los sub-elementos respectivos entonces debemos de ir a la ocnfiguración de la interface, "BP UV Edit"
+
+
+	_y una vez allí, ubicar el panel de "UV Mapping", en la parte inferior derecha y en la cuál, debemos de ubicar la pestaña ó tag, de
+
+	"Relax UV"
+
+
+	_en la cuál, debemos de activar las siguientes opciones:
+
+
+
+		_Pin Point Selection:
+
+			_ésta opción nos permitirá activar la opción de "pines", a través, de los vertex, que hemos seleccionado
+
+			_previamente sobre el motivo a través, del modo de edición de sub-elementos vertex, para las reservas de deformación sobre el motivo ó character
+
+
+			_Use Tag:
+
+				_(indeterminado)
+
+
+
+		_Cut Selection Edges:
+
+			_ésta opción nos permitirá activar la opción de "Seams/Cut", a través, de los edges, que hemos seleccionado
+
+			_previamente sobre el motivo a través, del modo de edición de sub-elementos edge, para creación de islans, sobre el motivo ó character
+
+
+			_Use Tag:
+
+				_ésta opción hará referencia a la selección que hemos hecho sobre el motivo ó character
+
+
+
+		_Apply:
+
+			_ésta opción nos pemritirá aplicar el sistema a unwrap, a través, de dos algoritmos que dispone el sistema
+
+			_para que así, el sistema haga un desplegado de UVs, en relación a la distribución de uvs, que hemos 
+
+			_indicado a través, de la selección de edges, como del algoritmo seleccionado
+
+
+
+		_Auto Realign:
+
+			_ésta es una opción alternativa para un realineado de islans, para el proceso de UVs
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-->
+</body>
+</html>

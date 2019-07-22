@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+</head>
+<body>
+<!--
+
+
+	Referencia:
+
+		mamecomdb
+
+		VRAY PARA CINEMA 4D ANTIALIASING
+:
+			 https://www.youtube.com/watch?v=eCLEYAMxVrs&list=PLXtVivrBaK3KNvPg4PV1fxXoWbilhJyKJ
+
+
+
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+	Sistema V-ray for C4D:
+	______________________
+
+
+	Antialising:
+	____________
+		
+		Descripci�n:
+		____________
+		
+		_El antialiasing es el suavizado que realiza vray, al pasar el estado la escena, de vectorizada a rasterizada 
+		
+		_es decir, de gráficos a pixeles ó de funciones matemáticas a pixeles que conforman el render
+
+
+		_Siempre que se realiza esta conversión se pierden datos ó información, y es allí donde estra el antialiasing
+
+
+
+		OBSERVACIÓN:
+		____________
+	
+		_Los valores de muestreo que indiquemos en la sección de antialiasing son tomados para su aplicación por vray al cuadrado 
+		
+		_ej: si colocamos "2", vray, tomará cuatro muestras por pixel.	
+
+
+
+		OBSERVACIÓN:
+		____________
+
+		_Entre menor sea el tamaño de resolución de salida del render, ej: 600x800px, será necesario un mayor antialiasing 
+		
+		_V-ray, cuenta con tres algoritmos de antialiasing Image sampler/Type
+
+
+
+		Fixed:
+		______
+
+		_éste es un algoritmo que toma un número fijo determinado por pixel, 
+		
+		_lo cuál, es especialmente útil para imágenes de alta complejidad 
+
+		_en la que sabemos el detalle de suavizado deseado en las imágenes y materiales en relación 
+		a la iluminación
+
+
+
+		Adaptative DMC:
+		_______________
+
+		_Este es un algoritmo que contempla que toma el valor por defecto y es el que nos proporciona un mejor  resultado 
+		
+		_éste consta de un valor variable, en la primera pasada utiliza el valor más bajo de muestreo 
+		
+		_y, basandose en la intensidad de los colores adyacentes, precisa si es necesario hacer otra pasada con el valor más alto de muestreo
+
+
+
+		Adaptative Subdivision:
+		_______________________
+
+		_Este es un algoritmo que toma un número variable de muestras pero éste trabajo a nivel de sub-pixels 
+		
+		_esto quiere decir, que en su valor de muestro más bajo trabaja con valores de negativos 
+
+
+		_ej: si ponemos un valor de "0", trabajará con una muestra por pixel, pero si ponemos un valor de "-1", trabajará con una muestra por cada 2 pxeles
+
+
+
+
+
+
+
+
+
+		
+
+		
+-->
+</body>
+</html>

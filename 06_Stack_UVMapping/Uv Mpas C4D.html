@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+</head>
+<body>
+<!--
+
+
+1.en la interface de uv edit arrastramos nuestro modelos a la ventana de uv edit
+
+2.a través de las 3  herramientas de selección de sub elementos de mesh, vertex, edges, faces
+
+3.lugo de seleccionar el área que nos interesa editar, podemos hacer una proyección de la misma con el criterio que escojamos:
+
+	3.1.Sphere: proyección esférica
+
+	3.2.Cylinder: proyección cilíndrica
+
+	3.3.Frontal: proyección frontal de la cámara seleccionada
+
+	3.4.Flat: proyecci�n axonom�trica de la vista � toma
+
+	3.5.Cubic: proyecci�n sintetizada que fragmenta la forma en proyecci�n simples superpuestras
+
+	3.6.Cubic2: proyecci�n sintetizada que fragmenta la forma en proyecci�n simples separadas
+
+	3.7.Box: proyecci�n en unwrar � desmembrado de la forma, similar la Cubic2
+
+	3.8.Shrink: proyecci�n autom�tica, �sta analiza la forma y reliza una proyecci�n con las zonas m�s grandes las cuales son m�s resaltadas � colocadas en primer plano
+
+4.luego de que hemos proyectado con el criterio que m�s se adapte a la forma deseada tambi�n prodremos editar la mesh que hemos proyectado a trav�s de las herramientas;
+
+	4.1.edici�n de Uvs vertex y Uv Polygon; para seleccionar, mover y deformar las proyecciones creadas en el panel de Uv Mpas
+
+5.para realizar mapeados de elementos complejos podemos indicar a la aplicaci�n nuestros propios criterios de cortes a medida, en a trav�s de seams seleccionadas: en "modo modelado, Master_Tony 6" 
+
+	5.1.en modo de edici�n de bordes; "edges", seleccionamos los bloques de contenido � formas � fracmentos de mesh que deseamos generar que m�s se adapten a la forma y el mapeo que deseamos lograr
+
+	5.2. luego debemos salvar esa selecci�n a trav�s de una etiqueta "tag", esto los hacemos a trav�s del menu Selecttion/Set Selection � "V"/Selection/Set Selection
+
+		5.2.1.se crear� en el la mesh en el outliner una tag en forma de tri�ngulo, lo seleccionamos y le colocamos un nombre descriptivo
+
+6.luego nos vamos al modo Uv Edit
+
+	6.1.ahora seleccionamos la opci�n de Uv Polygon, y seleccionamos todos los pol�gonos de nuestra forma, tambi�n con el comando Control+A
+
+	6.2.posteriormente colocamos la vista frontal de nuestro viewport "F4", para as� hacer una proyecci�n frontal base del objeto
+
+	6.3.luego en la secci�n Uv Mapping; le damos a la opci�n de proyecci�n "From � frontal", as� obtendremos una proyecci�n frontal del objeto base, la cual es necesaria
+
+	6.4.ahora nos vamos a la secci�n "Relax UV", y en la secci�n; activamos los check boxes: "Cut Selected Edges" y "Use Tag" y "Auto Realign"
+
+	6.5.luego, en el campo "Use Tag", que hemos activado arrastramos "Draw", la "Tag", de la selecci�n que habiamos creado en nuestra forma hasta el campo "Edge Selection"
+
+	6.6.ahora le damos a "Apply", para que se apliquen los cortes con nuestros criterios indicados anteriormente con los bordes de la selecci�n de las formas seleccionadas
+
+7.para redistribuci�n � auto ajuste de las partes � islas de formas resultantes en el camvas de la textura del panel Uv edit vamos a "Optimal Mapping"
+
+	7.1.la opci�n "Optimal (Cubic), redistribuye en bloques los uvs con los mismos criterios de "proyection Cubic"
+
+	7.2.la opci�n "Optimal (Angle), redistribuye en bloques los uvs con los criterios similares la "Cubic2", aunque m�s efectivo
+
+	7.3.La opci�n "Realign", redistribuye equidistantemente las islas de uvs con el mejor criterio en relaci�n al espacio del camvas (para m�xima edici�n hacerlo a mano)
+
+
+
+
+
+
+
+
+
+
+
+-->
+</body>
+</html>
